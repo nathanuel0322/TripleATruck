@@ -1,17 +1,15 @@
-import React from "react"
-import logo from '../logo.svg';
-import * as emoji from 'node-emoji'
+import React, { useState } from "react";
+import Header from "../components/header";
+import MidSlideShow from "../components/midslideshow";
+import TemporaryDrawer from "../components/sidenav";
 
-export default function Home () {
-    const welcome = emoji.emojify('Site in progress :male-construction-worker:')
+export default function Home() {
+    const [drawerOpen, setDrawerOpen] = useState(false);
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    {welcome}
-                </p>
-            </header>
+        <div>
+            <Header drawerfunc={setDrawerOpen} />
+            <MidSlideShow />
+            <TemporaryDrawer drawerstate={drawerOpen} drawerfunc={setDrawerOpen} />
         </div>
-    )
+    );
 }

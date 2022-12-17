@@ -1,0 +1,95 @@
+section {
+  overflow: visible;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+section > div {
+  margin-left: 1rem
+}
+
+.navbar {
+  background: #141229;
+  box-shadow: 3.5px 6.1px 30px rgba(0, 0, 0, 0.57);
+}
+
+.navbar-logo {
+  max-height: 80px;
+  min-width: 30px;
+  max-width: 80px;
+}
+
+.navbar-caption {
+    line-height: inherit !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+  margin: .667em 0.5rem !important;
+  padding: 0 !important;
+  transition: 0.3s;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: transparent;
+}
+.dropdown-item {
+  transition: 0.4s;
+}
+
+.nav-link:hover, .dropdown-item:hover {
+  color: #1bc2ca !important;
+}
+
+.dropdown-menu, .hamburger span, .builder-sidebar, .close-sidebar span {
+  background-color: #141229;
+}
+
+.close-sidebar:focus {
+  outline: 2px auto #1bc2ca;
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.menu-container {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.collapse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-buttons {
+    border: 0.1rem solid #1bc2ca;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    color: #1bc2ca;
+    transition: 0.3s;
+}
+
+.navbar-buttons:hover {
+    background-color: #1bc2ca;
+    color: white;
+}
