@@ -1,15 +1,15 @@
-section {
+#headersection {
   overflow: visible;
   font-weight: 700;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   padding: 0.5rem 0;
+  box-shadow: 3.5px 6.1px 30px rgb(0 0 0 / 57%);
 }
 
-section > div {
+#headersection > div {
   margin-left: 1rem
 }
 

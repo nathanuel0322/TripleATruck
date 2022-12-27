@@ -1,0 +1,139 @@
+.cid-traOecPbxG {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #141229;
+    padding: 1.875rem 0;
+}
+
+.cid-traOecPbxG * {
+    word-break: break-word;
+}
+
+.container {
+    padding: 0 1rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mbr-row, .mbr-form-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.mbr-jc-c {
+    justify-content: center;
+}
+.card-inner, .items-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-head {
+    padding: 1.5rem 2rem;
+}
+
+.display-5 {
+    font-family: 'Oswald',sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.mbr-section-title, .mbr-section-subtitle, .pkgcardtitle, .card-subtitle {
+    letter-spacing: -1px;
+    font-weight: 500;
+}
+
+.mbr-bold {
+    font-weight: 700;
+}
+
+.display-2 {
+    font-family: 'Oswald',sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.items-list-wrap {
+    padding: 24px 20px 0;
+}
+
+.items-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cid-traOecPbxG .list-item {
+    border-bottom: 1px solid #cccccc;
+}
+
+.cid-traOecPbxG .card-inner, .cid-traOecPbxG .card-head, .cid-traOecPbxG .card-price-wrap, .cid-traOecPbxG .list-item {
+    background-color: #292845;
+}
+
+.items-list .list-item, .card-price-wrap {
+    padding: 1rem 2rem;
+}
+
+.align-center .list-item {
+    justify-content: center;
+}
+
+.display-7 {
+    font-family: 'Play',sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.cid-traOecPbxG .card-head, .cid-traOecPbxG .card-inner {
+    border-radius: 15px;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.card {
+    border-radius: .625rem;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.price-sign {
+    margin-right: 0.2rem;
+}
+
+.price-value {
+    letter-spacing: 0.05rem;
+}
+
+.cid-traOecPbxG .list-item:last-of-type {
+    padding-bottom: 1.5rem;
+    border-bottom: none;
+}
+
+.cid-traOecPbxG .price-wrap2 {
+    background-color: #5c9ddd;
+    border-bottom-left-radius: 0.9375rem;
+    border-bottom-right-radius: 0.9375rem;
+}
+
+.cid-traOecPbxG .price-wrap3 {
+    background-color: #7c69e3;
+}
+
+.cid-traOecPbxG .price-wrap4 {
+    background-color: #3dd0d8;
+}
+
+.card .card-title {
+    transition: 0.5s;
+}
