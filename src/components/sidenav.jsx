@@ -36,6 +36,7 @@ export default function TemporaryDrawer({drawerstate, drawerfunc}) {
                                 textAlign: index === 7 && 'center',
                                 border: index === 7 && '2px solid'
                             }}
+                            onClick={() => drawerfunc(false)}
                         >
                             {text}
                         </Link>

@@ -1,6 +1,5 @@
 .cid-traOecPbxG {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 8rem !important;
     background-color: #141229;
     padding: 1.875rem 0;
 }
@@ -38,22 +37,22 @@
     padding: 1.5rem 2rem;
 }
 
-.display-5 {
+.display-5-pack {
     font-family: 'Oswald',sans-serif;
     font-size: 1.5rem;
     line-height: 1.2;
 }
 
-.mbr-section-title, .mbr-section-subtitle, .pkgcardtitle, .card-subtitle {
+.mbr-section-title-pack, .mbr-section-subtitle, .pkgcardtitle, .card-subtitle {
     letter-spacing: -1px;
     font-weight: 500;
 }
 
-.mbr-bold {
+.mbr-bold-pack {
     font-weight: 700;
 }
 
-.display-2 {
+.display-2-pack {
     font-family: 'Oswald',sans-serif;
     font-size: 2.5rem;
     line-height: 1.2;
@@ -137,3 +136,34 @@
 .card .card-title {
     transition: 0.5s;
 }
+
+.mbr-col-md-6 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+@media (max-width: 767px) {
+    .mbr-col-sm-12 {
+        -ms-flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin: 1rem auto;
+    }
+
+    .mbr-row, .mbr-jc-c {
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* .cid-traOecPbxG .card-inner {
+    padding-bottom: 2.45rem;
+} */

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useMediaQuery } from "react-responsive";
 import Stylesheet from "reactjs-stylesheet";
 import '../assets/css/packages.css'
@@ -11,8 +11,11 @@ export default function Packages() {
         <div>
             <section className="pricing-table1 cid-traOecPbxG">
 	            <div className="container" style={{maxWidth: desktop ? '960px' : tablet && '720px'}}>
-                    <div className="mbr-row mbr-jc-c">
-			            <div style={desktop ? packagesstyles.cardlg : tablet && packagesstyles.cardmd} className='card card1 mbr-col-sm-12 mbr-col-md-6 md-pb mbr-col-lg-3 align-center'
+                    <div className="mbr-row mbr-jc-c"
+                     style={{flexDirection: mobile && 'column', alignItems: mobile && 'center'}}
+                     >
+			            <div style={{flex: desktop ? '0 0 25%' : tablet && '0 0 50%'}} 
+                            className='card card1 mbr-col-sm-12 mbr-col-md-6 md-pb mbr-col-lg-3 align-center'
                             onMouseOver={() => {
                                 document.getElementById("card1title").style.color = "#1bc2ca"
                             }}
@@ -20,22 +23,22 @@ export default function Packages() {
                                 document.getElementById("card1title").style.color = "white"
                             }}
                         >
-				            <div class="card-inner">
-					            <div class="card-head">
-						            <h3 id="card1title" class="card-title mbr-fonts-style display-5">2-Hour Party</h3>
+				            <div className="card-inner">
+					            <div className="card-head">
+						            <h3 id="card1title" className="card-title mbr-fonts-style display-5-pack">2-Hour Party</h3>
 					            </div>
-					            <div style={{backgroundColor: '#3dd0d8'}} class="card-price-wrap">
-                                    <div class="card-price">
-                                        <span class="price-sign mbr-bold display-5">$</span>
-                                        <span class="price-value mbr-bold display-2">500</span>
+					            <div style={{backgroundColor: '#3dd0d8'}} className="card-price-wrap">
+                                    <div className="card-price">
+                                        <span className="price-sign mbr-bold display-5-pack">$</span>
+                                        <span className="price-value mbr-bold-pack display-2-pack">500</span>
                                     </div>
 					            </div>
-                                <div class="items-list-wrap">
-                                    <ul class="items-list">
+                                <div className="items-list-wrap">
+                                    <ul className="items-list">
                                         {["Personal Use", "One Site", "Email Support", "Email Support", "Email Support", "Email Support"].map((item, index) => {
                                             return (
-                                                <li class="list-item">
-                                                    <span class="item-text mbr-fonts-style display-7">{item}</span>
+                                                <li className="list-item" key={index}>
+                                                    <span className="item-text mbr-fonts-style display-7">{item}</span>
                                                 </li>
                                             )
                                         })}
@@ -43,7 +46,7 @@ export default function Packages() {
                                 </div>
 				            </div>
 			            </div>
-                        <div class="card card2 mbr-col-sm-12 mbr-col-md-6 md-pb mbr-col-lg-3 align-center"
+                        <div className="card card2 mbr-col-sm-12 mbr-col-md-6 md-pb mbr-col-lg-3 align-center"
                             onMouseOver={() => {
                                 document.getElementById("card2title").style.color = "#1bc2ca"
                             }}
@@ -51,19 +54,19 @@ export default function Packages() {
                                 document.getElementById("card2title").style.color = "white"
                             }}
                         >
-                            <div class="card-inner">
-                                <div class="card-head">
-                                    <h3 id="card2title" class="card-title mbr-fonts-style display-5">Additional Hours</h3>
+                            <div className="card-inner">
+                                <div className="card-head">
+                                    <h3 id="card2title" className="card-title mbr-fonts-style display-5-pack">Additional Hours</h3>
                                 </div>
-                                <div class="card-price-wrap price-wrap2">
-                                    <div class="card-price">
-                                        <span class="price-sign mbr-bold mbr-fonts-style display-5">+$</span>
-                                        <span class="price-value mbr-bold mbr-fonts-style display-2">150</span>
+                                <div className="card-price-wrap price-wrap2">
+                                    <div className="card-price">
+                                        <span className="price-sign mbr-bold mbr-fonts-style display-5-pack">+$</span>
+                                        <span className="price-value mbr-bold mbr-fonts-style display-2-pack">150</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card card3 mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 align-center"
+                        <div className="card card3 mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 align-center"
                             onMouseOver={() => {
                                 document.getElementById("card3title").style.color = "#1bc2ca"
                             }}
@@ -71,45 +74,45 @@ export default function Packages() {
                                 document.getElementById("card3title").style.color = "white"
                             }}
                         >
-                            <div class="card-inner">
-                                <div class="card-head">
-                                    <h3 id="card3title" class="card-title mbr-fonts-style display-5">3-Hour Movie Package</h3>
+                            <div className="card-inner">
+                                <div className="card-head">
+                                    <h3 id="card3title" className="card-title mbr-fonts-style display-5-pack">3-Hour Movie Package</h3>
                                 </div>
-                                <div class="card-price-wrap price-wrap3">
-                                    <div class="card-price">
-                                        <span class="price-sign mbr-bold mbr-fonts-style display-5">$</span>
-                                        <span class="price-value mbr-bold mbr-fonts-style display-2">475</span>
+                                <div className="card-price-wrap price-wrap3">
+                                    <div className="card-price">
+                                        <span className="price-sign mbr-bold mbr-fonts-style display-5-pack">$</span>
+                                        <span className="price-value mbr-bold mbr-fonts-style display-2-pack">475</span>
                                     </div>
                                     
                                 </div>
-                                <div class="items-list-wrap">
-                                    <ul class="items-list">
+                                <div className="items-list-wrap">
+                                    <ul className="items-list">
                                         
                                         
                                         
-                                    <li class="list-item">
+                                    <li className="list-item">
                                             
-                                            <span class="item-text mbr-fonts-style display-7">Commercial Use</span>
-                                        </li><li class="list-item">
+                                            <span className="item-text mbr-fonts-style display-7">Commercial Use</span>
+                                        </li><li className="list-item">
                                             
-                                            <span class="item-text mbr-fonts-style display-7">Unlimited sites</span>
-                                        </li><li class="list-item">
+                                            <span className="item-text mbr-fonts-style display-7">Unlimited sites</span>
+                                        </li><li className="list-item">
                                             
-                                            <span class="item-text mbr-fonts-style display-7">Premium Support</span>
-                                        </li><li class="list-item">
+                                            <span className="item-text mbr-fonts-style display-7">Premium Support</span>
+                                        </li><li className="list-item">
                                             
-                                            <span class="item-text mbr-fonts-style display-7">Premium Support</span>
-                                        </li><li class="list-item">
+                                            <span className="item-text mbr-fonts-style display-7">Premium Support</span>
+                                        </li><li className="list-item">
                                             
-                                            <span class="item-text mbr-fonts-style display-7">Premium Support</span>
-                                        </li><li class="list-item">
+                                            <span className="item-text mbr-fonts-style display-7">Premium Support</span>
+                                        </li><li className="list-item">
                                             
-                                            <span class="item-text mbr-fonts-style display-7">Premium Support</span>
+                                            <span className="item-text mbr-fonts-style display-7">Premium Support</span>
                                         </li></ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="card card4 mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 align-center last-child"
+                        <div className="card card4 mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 align-center last-child"
                             onMouseOver={() => {
                                 document.getElementById("card4title").style.color = "#1bc2ca"
                             }}
@@ -117,40 +120,40 @@ export default function Packages() {
                                 document.getElementById("card4title").style.color = "white"
                             }}
                         >
-                            <div class="card-inner">
-                                <div class="card-head">
-                                    <h3 id="card4title" class="card-title mbr-fonts-style display-5">VR Package</h3>
+                            <div className="card-inner">
+                                <div className="card-head">
+                                    <h3 id="card4title" className="card-title mbr-fonts-style display-5-pack">VR Package</h3>
                                 </div>
-                                <div class="card-price-wrap price-wrap4">
-                                    <div class="card-price">
-                                        <span class="price-sign mbr-bold mbr-fonts-style display-5">$</span>
-                                        <span class="price-value mbr-bold mbr-fonts-style display-2">200</span>
+                                <div className="card-price-wrap price-wrap4">
+                                    <div className="card-price">
+                                        <span className="price-sign mbr-bold mbr-fonts-style display-5-pack">$</span>
+                                        <span className="price-value mbr-bold mbr-fonts-style display-2-pack">200</span>
                                     </div>
                                     
                                 </div>
-                                <div class="items-list-wrap">
-                                    <ul class="items-list">
+                                <div className="items-list-wrap">
+                                    <ul className="items-list">
                                         
                                         
                                         
-                                    <li class="list-item">
+                                    <li className="list-item">
                                             
-                                            <span class="item-text mbr-fonts-style display-7">Lorem ipsum</span>
-                                        </li><li class="list-item">
+                                            <span className="item-text mbr-fonts-style display-7">Lorem ipsum</span>
+                                        </li><li className="list-item">
                                             
-                                            <span class="item-text mbr-fonts-style display-7">Lorem ipsum</span>
-                                        </li><li class="list-item">
+                                            <span className="item-text mbr-fonts-style display-7">Lorem ipsum</span>
+                                        </li><li className="list-item">
                                             
-                                            <span class="item-text mbr-fonts-style display-7">Lorem ipsum</span>
-                                        </li><li class="list-item">
+                                            <span className="item-text mbr-fonts-style display-7">Lorem ipsum</span>
+                                        </li><li className="list-item">
                                             
-                                            <span class="item-text mbr-fonts-style display-7">Lorem ipsum</span>
-                                        </li><li class="list-item">
+                                            <span className="item-text mbr-fonts-style display-7">Lorem ipsum</span>
+                                        </li><li className="list-item">
                                             
-                                            <span class="item-text mbr-fonts-style display-7">Lorem ipsum</span>
-                                        </li><li class="list-item">
+                                            <span className="item-text mbr-fonts-style display-7">Lorem ipsum</span>
+                                        </li><li className="list-item">
                                             
-                                            <span class="item-text mbr-fonts-style display-7">Lorem ipsum</span>
+                                            <span className="item-text mbr-fonts-style display-7">Lorem ipsum</span>
                                         </li></ul>
                                 </div>
                             </div>
@@ -163,16 +166,4 @@ export default function Packages() {
 }
 
 const packagesstyles = Stylesheet.create({
-    cardlg: {
-        flex: '0 0 25%',
-        maxWidth: '25%',
-        paddingRight: '1rem',
-        paddingLeft: '1rem'
-    },
-    cardmd: {
-        flex: '0 0 50%',
-        maxWidth: '25%',
-        paddingRight: '1rem',
-        paddingLeft: '1rem'
-    }
 })
