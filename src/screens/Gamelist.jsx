@@ -25,7 +25,7 @@ export default function Gamelist() {
                             <div className="card-wrapper">
                                 <div className="card-img mbr-m-auto">
                                 <div className="img-overlay"></div>
-                                <img decoding="async" alt="console" src={item.image} className="i-amphtml-fill-content i-amphtml-replaced-content" />
+                                <img decoding="async" alt="console" src={item.image} className="img-game i-amphtml-fill-content i-amphtml-replaced-content" />
                             </div>
                             <div className="card-box mbr-pt-3 mbr-px-4 mbr-pb-3">
                                 <h3 className="card-title mbr-bold mbr-fonts-style mbr-white display-5">{item.system}</h3>

@@ -29,7 +29,7 @@ export default function MidSlideShow() {
                     children: <Slide image={'header-bg.jpg'} />
                 }
             ]}
-            style={{ marginTop: headerheight }}
+            style={{ marginTop: '5.2rem' }}
         />
     )
 }

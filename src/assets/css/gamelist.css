@@ -155,7 +155,7 @@ section {
     display: inline-block;
 }
 
-img {
+.img-game {
     height: 100%;
     width: 100%;
     border-radius: 15px 15px 0 0;
