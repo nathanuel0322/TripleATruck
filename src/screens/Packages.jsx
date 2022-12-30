@@ -15,7 +15,7 @@ export default function Packages() {
                      style={{flexDirection: mobile && 'column', alignItems: mobile && 'center'}}
                      >
 			            <div style={{flex: desktop ? '0 0 25%' : tablet && '0 0 50%'}} 
-                            className='card card1 mbr-col-sm-12 mbr-col-md-6 md-pb mbr-col-lg-3 align-center'
+                            className='card card1 mbr-col-sm-12-pack mbr-col-md-6 md-pb mbr-col-lg-3 align-center'
                             onMouseOver={() => {
                                 document.getElementById("card1title").style.color = "#1bc2ca"
                             }}
@@ -46,7 +46,7 @@ export default function Packages() {
                                 </div>
 				            </div>
 			            </div>
-                        <div className="card card2 mbr-col-sm-12 mbr-col-md-6 md-pb mbr-col-lg-3 align-center"
+                        <div className="card card2 mbr-col-sm-12-pack mbr-col-md-6 md-pb mbr-col-lg-3 align-center"
                             onMouseOver={() => {
                                 document.getElementById("card2title").style.color = "#1bc2ca"
                             }}
@@ -66,7 +66,7 @@ export default function Packages() {
                                 </div>
                             </div>
                         </div>
-                        <div className="card card3 mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 align-center"
+                        <div className="card card3 mbr-col-sm-12-pack mbr-col-md-6 mbr-col-lg-3 align-center"
                             onMouseOver={() => {
                                 document.getElementById("card3title").style.color = "#1bc2ca"
                             }}
@@ -112,7 +112,7 @@ export default function Packages() {
                                 </div>
                             </div>
                         </div>
-                        <div className="card card4 mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 align-center last-child"
+                        <div className="card card4 mbr-col-sm-12-pack mbr-col-md-6 mbr-col-lg-3 align-center last-child"
                             onMouseOver={() => {
                                 document.getElementById("card4title").style.color = "#1bc2ca"
                             }}

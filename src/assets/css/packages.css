@@ -145,7 +145,7 @@
 }
 
 @media (max-width: 767px) {
-    .mbr-col-sm-12 {
+    .mbr-col-sm-12-pack {
         -ms-flex: 0 0 100%;
         -webkit-box-flex: 0;
         flex: 0 0 100%;

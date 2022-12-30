@@ -185,7 +185,7 @@ section {
     .card:not(.last-child) {
         padding-bottom: 2rem;
     }
-    .mbr-col-sm-12 {
+    .mbr-col-sm-game {
         -ms-flex: 0 0 100%;
         -webkit-box-flex: 0;
         flex: 0 0 100%;

@@ -21,7 +21,7 @@ export default function Gamelist() {
                 </div>
                 <div className="mbr-row mbr-jc-c mbr-pt-4">
                     {consoleobj.map((item, index) => (
-                        <div className={index === consoleobj.length - 1 ? "card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 align-center last-child" : "card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-3 align-center md-pb"}>
+                        <div className={index === consoleobj.length - 1 ? "card mbr-col-sm-game mbr-col-md-6 mbr-col-lg-3 align-center last-child" : "card mbr-col-sm-game mbr-col-md-6 mbr-col-lg-3 align-center md-pb"}>
                             <div className="card-wrapper">
                                 <div className="card-img mbr-m-auto">
                                 <div className="img-overlay"></div>
