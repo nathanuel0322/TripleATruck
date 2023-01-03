@@ -2,7 +2,6 @@
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: #141229;
-    margin-top: 5rem;
 }
 section, .container-con, .container-fluid {
     position: relative;
@@ -22,13 +21,10 @@ section {
     margin-right: auto;
     margin-left: auto;
 }
-.mbr-pb-4, .mbr-py-4 {
+.pb-4, .py-4 {
     padding-bottom: 2rem;
 }
-.align-center {
-    text-align: center;
-}
-.mbr-section-title-con, .mbr-section-subtitle, .card-title, .card-subtitle {
+.section-title-con, .section-subtitle, .card-title, .card-subtitle {
     letter-spacing: -1px;
     font-weight: 500;
 }
@@ -37,16 +33,10 @@ section {
     font-size: 2.5rem;
     line-height: 1.2;
 }
-.mbr-pb-3, .mbr-py-3 {
-    padding-bottom: 1.5rem;
+.pb-3, .py-3 {
+    padding-bottom: 1.5rem !important;
 }
-.mbr-bold-con {
-    font-weight: 700;
-}
-.mbr-white-con {
-    color: #ffffff;
-}
-.mbr-section-title-con {
+.section-title-con {
     margin: 0;
     padding: 0;
     font-style: normal;
@@ -54,7 +44,7 @@ section {
     width: 100%;
     text-shadow: 0 2px 4.8px rgb(30 29 50 / 30%);
 }
-.mbr-row-con, .mbr-form-row-con {
+.row-con, .form-row-con {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -63,26 +53,14 @@ section {
     margin-left: -1rem;
     margin-right: -1rem;
 }
-.mbr-jc-c {
-    justify-content: center;
-}
-.mbr-column {
-    flex-direction: column;
-}
-.mbr-flex {
-    display: flex;
-}
-.mbr-pb-4, .mbr-py-4 {
+.pb-4, .py-4 {
     padding-bottom: 2rem;
 }
-.cid-trnpRGggDT .mbr-ai-e {
+.cid-trnpRGggDT .ai-e {
     align-items: flex-end;
 }
-.mbr-pb-1, .mbr-py-1 {
+.pb-1, .py-1 {
     padding-bottom: 0.5rem;
-}
-.mbr-flex {
-    display: flex;
 }
 .cid-trnpRGggDT .icon-wrapper2 {
     margin-right: 1rem;
@@ -101,11 +79,11 @@ section {
     font-size: 0.95rem;
     line-height: 1.4;
 }
-.mbr-form-row {
+.form-row {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
 }
-.mbr-form-row > [class*="mbr-col"] {
+.form-row > [class*="col"] {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
@@ -138,7 +116,7 @@ form input, form textarea, form select {
 .cid-trnpRGggDT .form-block input:hover, .cid-trnpRGggDT .form-block textarea:hover, .cid-trnpRGggDT .form-block select:hover {
     border: 1px solid #1bc2ca;
 }
-.mbr-form .field-input:hover {
+.form .field-input:hover {
     border-color: #0072ce;
 }
 .cid-trnpRGggDT .form-block textarea {
@@ -150,17 +128,17 @@ form textarea.field-input {
 form textarea.field-input {
     height: 200px;
 }
-.mbr-col {
+.col {
     -ms-flex: 1 1 auto;
     -webkit-box-flex: 1;
     flex: 1 1 auto;
     max-width: 100%;
 }
-.mbr-section-btn {
+.section-btn {
     margin: 0 -0.8rem;
     font-size: 0;
 }
-form .btn, form .mbr-section-btn {
+form .btn, form .section-btn {
     margin: 0;
 }
 .btn {
@@ -204,14 +182,8 @@ form .btn, form .mbr-section-btn {
     text-align: center;
     padding: 0rem 1rem;
 }
-@media (max-width: 767px) {
-    .container-con {
-        max-width: 540px;
-    }
-    .align-left, .align-center, .align-right {
-        text-align: center;
-    }
-    .mbr-col-sm-12 {
+@media (min-width: 768px) {
+    .col-md-12-con {
         -ms-flex: 0 0 100%;
         -webkit-box-flex: 0;
         flex: 0 0 100%;
@@ -219,7 +191,26 @@ form .btn, form .mbr-section-btn {
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    .mbr-col, .mbr-col-auto {
+    .container-con {
+        max-width: 720px;
+    }
+}
+@media (max-width: 768px) {
+    .container-con {
+        max-width: 540px;
+    }
+    .align-left, .align-center, .align-right {
+        text-align: center;
+    }
+    .col-sm-12 {
+        -ms-flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .col, .col-auto {
         padding-right: 1rem;
         padding-left: 1rem;
     }
@@ -241,8 +232,32 @@ form .btn, form .mbr-section-btn {
         line-height: calc( 1.4 * (1rem + (1 - 1) * ((100vw - 20rem) / (48 - 20))));
     }
 }
+@media (min-width: 992px) {
+    .container-con {
+        max-width: 960px;
+    }
+    .cid-trnpRGggDT .main-row {
+        margin-left: -2rem;
+        margin-right: -2rem;
+    }
+    .cid-trnpRGggDT .main-row > * {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .col-lg-6-con {
+        -ms-flex: 0 0 50%;
+        -webkit-box-flex: 0;
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
 @media (max-width: 992px) {
     .cid-trnpRGggDT .contacts-block .icons-list {
         text-align: center;
+    }
+    .cid-trnpRGggDT .first-element {
+        padding-bottom: 2rem;
     }
 }

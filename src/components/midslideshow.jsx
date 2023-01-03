@@ -6,10 +6,8 @@ import '../assets/css/midslides.css'
 import Slide from "./home/Slide";
 
 export default function MidSlideShow() {
-    const [headerheight, setHeaderheight] = useState(0)
     const [headermargin, setHeadermargin] = useState(0)
     useEffect(() => {
-        setHeaderheight(document.getElementsByClassName("horizontal-menu")[0].offsetHeight)
         setHeadermargin(document.getElementsByClassName("navbar")[0].offsetHeight - document.getElementsByClassName("cid-trIi3lod2Q")[0].offsetHeight)
     }, [])
 

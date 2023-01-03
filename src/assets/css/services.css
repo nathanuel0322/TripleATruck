@@ -1,5 +1,5 @@
 .cid-trmAg1lINL {
-    padding-top: 8rem;
+    padding-top: 4rem;
     padding-bottom: 4rem;
     background-color: #141229;
     color: white;
@@ -24,11 +24,6 @@ section {
     font-size: 2.5rem;
     line-height: 1.2;
 }
-
-.align-center {
-    text-align: center;
-}
-
 .cid-trmAg1lINL .card-box {
     padding: 60px 30px;
 }
@@ -41,18 +36,15 @@ section {
     flex-direction: row-reverse;
 }
 
-.cid-trmAg1lINL .mbr-flex {
+.cid-trmAg1lINL .flex {
     align-items: center;
 }
 
-.mbr-flex {
-    display: flex;
-}
-
 .display-5-serv {
-    font-family: 'Oswald',sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 1.5rem;
     line-height: 1.2;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-4, .display-5-serv, .display-7 {
@@ -116,16 +108,16 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-4, .display-5-serv, .di
     background: linear-gradient(to right,#96ecf0,#5c9edd);
 }
 
-.mbr-pb-5, .mbr-py-5 {
+.pb-5, .py-5 {
     padding-bottom: 3rem;
 }
 
-.mbr-section-title-serv, .mbr-section-subtitle, .card-title, .card-subtitle {
+.section-title-serv, .section-subtitle, .card-title, .card-subtitle {
     letter-spacing: -1px;
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 
-.mbr-section-title-serv {
+.section-title-serv {
     text-shadow: 0 2px 4.8px rgb(30 29 50 / 30%);
     margin: 0;
     padding: 0;
@@ -133,8 +125,17 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-4, .display-5-serv, .di
     line-height: 1.2;
     width: 100%;
 }
+.row-serv, .form-row-serv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
 
-.cid-trmAg1lINL .mbr-col-sm-12, .cid-trmAg1lINL .mbr-col-md-6, .cid-trmAg1lINL .mbr-col-lg-6 {
+.cid-trmAg1lINL .col-sm-12-serv, .cid-trmAg1lINL .col-md-6-serv, .cid-trmAg1lINL .col-lg-6-serv {
     display: flex;
     padding: 0;
 }
@@ -144,7 +145,7 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-4, .display-5-serv, .di
     margin-right: auto;
     margin-left: auto;
 }
-.mbr-pt-5, .mbr-py-5 {
+.pt-5, .py-5 {
     padding-top: 3rem;
 }
 .cid-trmAg1lINL .box2, .cid-trmAg1lINL .box4 {
@@ -166,7 +167,7 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-4, .display-5-serv, .di
     .container-serv {
         max-width: 720px;
     }
-    .mbr-col-md-12 {
+    .col-md-12-serv {
         -ms-flex: 0 0 100%;
         -webkit-box-flex: 0;
         flex: 0 0 100%;
@@ -187,7 +188,7 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-4, .display-5-serv, .di
     .container-serv {
         max-width: 960px;
     }
-    .mbr-col-lg-6 {
+    .col-lg-6-serv {
         -ms-flex: 0 0 50%;
         -webkit-box-flex: 0;
         flex: 0 0 50%;

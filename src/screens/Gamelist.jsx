@@ -14,21 +14,21 @@ export default function Gamelist() {
         <section className="team1 cid-trndaP1tRj" id="team1-p">
             <div className="container-game">
                 <div className="title align-center">
-                    <h3 className="mbr-section-title-game mbr-bold mbr-fonts-style mbr-white mbr-pb-4 display-2-game">Our Team</h3>
-                    <h4 className="mbr-section-subtitle mbr-pt-2 mbr-fonts-style mbr-white display-5-game">Our game truck carries all the latest game systems & games, and we're always updating.
+                    <h3 className="section-title-game bold fonts-style white pb-4 display-2-game">Our Team</h3>
+                    <h4 className="section-subtitle pt-2 fonts-style white display-5-game">Our game truck carries all the latest game systems & games, and we're always updating.
                         <div>Even better, we have JUST DANCE for the dancers!</div>
                     </h4>
                 </div>
-                <div className="mbr-row-game mbr-jc-c mbr-pt-4">
+                <div className="row-game jc-c pt-4">
                     {consoleobj.map((item, index) => (
-                        <div className={index === consoleobj.length - 1 ? "card-game mbr-col-sm-game mbr-col-md-6 mbr-col-lg-3 align-center last-child" : "card-game mbr-col-sm-game mbr-col-md-6 mbr-col-lg-3 align-center md-pb"}>
+                        <div className={index === consoleobj.length - 1 ? "card-game col-sm-game col-md-6 col-lg-3-game align-center last-child" : "card-game col-sm-game col-md-6 col-lg-3-game align-center md-pb"}>
                             <div className="card-wrapper">
-                                <div className="card-img mbr-m-auto">
+                                <div className="card-img m-auto">
                                 <div className="img-overlay"></div>
                                 <img decoding="async" alt="console" src={item.image} className="img-game i-amphtml-fill-content i-amphtml-replaced-content" />
                             </div>
-                            <div className="card-box mbr-pt-3 mbr-px-4 mbr-pb-3">
-                                <h3 className="card-title mbr-bold mbr-fonts-style mbr-white display-5-game">{item.system}</h3>
+                            <div className="card-box pt-3 px-4 pb-3">
+                                <h3 className="card-title bold fonts-style white display-5-game">{item.system}</h3>
                             </div>
                             </div>
                         </div>

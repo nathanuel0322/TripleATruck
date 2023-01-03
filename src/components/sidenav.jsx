@@ -18,23 +18,25 @@ export default function TemporaryDrawer({drawerstate, drawerfunc}) {
                         <CloseIcon fontSize='small' sx={{width: 1/4, height: 1/4, color: "white"}} />
                     </IconButton>
                 </div>
-                <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', fontFamily: "'Play', sans-serif", fontSize: 20, fontWeight: 600}}>
-                    {['Services', 'Packages', 'Game List', 'Gallery', 'E-Invites', 'Contact Us', 'About', 'Book Now'].map((text, index) => (
+                <div className='linkdiv'>
+                    {['Services', 'Packages', 'Game List', 
+                    // 'Gallery', 'E-Invites', 
+                    'Contact Us', 'About', 'Book Now'].map((text, index) => (
                         <Link key={index} to={`/${text.split(" ").join("").toLowerCase()}`} 
                             style={{
                                 textDecoration: 'none',
-                                color: index === 7 ? '#1bc2ca' : 'white',
+                                color: index === 5 ? '#1bc2ca' : 'white',
                                 fontFamily: "'Play', sans-serif",
                                 fontSize: '1rem',
                                 fontWeight: 600,
-                                margin: '.667rem 1rem',
-                                borderColor: index === 7 && '#1bc2ca',
-                                borderRadius: index === 7 && 40,
-                                textTransform: index === 7 && 'uppercase',
-                                padding: index === 7 && '.625rem 2rem',
-                                width: index === 7 && '100%',
-                                textAlign: index === 7 && 'center',
-                                border: index === 7 && '2px solid'
+                                margin: '.665rem 1rem',
+                                borderColor: index === 5 && '#1bc2ca',
+                                borderRadius: index === 5 && 40,
+                                textTransform: index === 5 && 'uppercase',
+                                padding: index === 5 && '.625rem 2rem',
+                                width: index === 5 && '100%',
+                                textAlign: index === 5 && 'center',
+                                border: index === 5 && '2px solid'
                             }}
                             onClick={() => drawerfunc(false)}
                         >

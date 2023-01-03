@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import MidSlideShow from "../components/midslideshow";
 
 export default function Home() {

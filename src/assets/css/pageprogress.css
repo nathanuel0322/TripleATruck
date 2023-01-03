@@ -1,0 +1,11 @@
+.ppdiv {
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "system-ui";
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}

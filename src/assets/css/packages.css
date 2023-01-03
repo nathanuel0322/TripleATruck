@@ -1,7 +1,8 @@
 .cid-traOecPbxG {
-    padding-top: 8rem !important;
+    padding-top: 5rem !important;
     background-color: #141229;
     padding: 1.875rem 0;
+    color: white;
 }
 
 .cid-traOecPbxG * {
@@ -14,7 +15,7 @@
     margin-right: auto;
     margin-left: auto;
 }
-.mbr-row, .mbr-form-row {
+.row-pack, .form-row-pack {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -22,11 +23,6 @@
     flex-wrap: wrap;
     margin-left: -1rem;
     margin-right: -1rem;
-    color: white;
-}
-
-.mbr-jc-c {
-    justify-content: center;
 }
 .card-inner, .items-list {
     display: flex;
@@ -43,13 +39,9 @@
     line-height: 1.2;
 }
 
-.mbr-section-title-pack, .mbr-section-subtitle, .pkgcardtitle, .card-subtitle {
+.section-title-pack, .section-subtitle, .pkgcardtitle, .card-subtitle {
     letter-spacing: -1px;
     font-weight: 500;
-}
-
-.mbr-bold-pack {
-    font-weight: 700;
 }
 
 .display-2-pack {
@@ -93,10 +85,6 @@
     border-radius: 15px;
 }
 
-.align-center {
-    text-align: center;
-}
-
 .card {
     border-radius: .625rem;
     position: relative;
@@ -137,27 +125,28 @@
     transition: 0.5s;
 }
 
-.mbr-col-md-6-pack {
+.col-md-6-pack {
     flex: 0 0 25%;
     max-width: 25%;
     padding-right: 1rem;
     padding-left: 1rem;
 }
 @media (min-width: 768px) {
-    .mbr-col-md-6 {
+    .col-md-6-pack {
         -ms-flex: 0 0 50%;
         -webkit-box-flex: 0;
         flex: 0 0 50%;
         max-width: 50%;
         padding-right: 1rem;
         padding-left: 1rem;
+        margin-bottom: 2rem;
     }
     .container-pack {
         max-width: 720px;
     }
 }
 @media (max-width: 767px) {
-    .mbr-col-sm-12-pack {
+    .col-sm-12-pack {
         -ms-flex: 0 0 100%;
         -webkit-box-flex: 0;
         flex: 0 0 100%;
@@ -167,7 +156,7 @@
         margin: 1rem auto;
     }
 
-    .mbr-row-pack, .mbr-jc-c-pack {
+    .row-pack, .jc-c-pack {
         flex-direction: column;
     }
 
@@ -184,7 +173,7 @@
     .container-pack {
         max-width: 960px;
     }
-    .mbr-col-lg-3 {
+    .col-lg-3-pack {
         -ms-flex: 0 0 25%;
         -webkit-box-flex: 0;
         flex: 0 0 25%;

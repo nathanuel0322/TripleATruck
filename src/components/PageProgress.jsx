@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../assets/css/pageprogress.css'
 
 export default function PageProgress({type}) {
     const [headerheight, setHeaderheight] = useState(0)
@@ -6,9 +7,7 @@ export default function PageProgress({type}) {
         setHeaderheight(document.getElementsByClassName("horizontal-menu")[0].offsetHeight)
     }, [])
     return (
-        <div style={{margin: '0 auto', color: 'white', height: `calc(100vh - ${headerheight}px)`, marginTop: `${headerheight}px`, textAlign: 'center',
-            display: 'flex', flexDirection: 'column', fontFamily: "system-ui", alignItems: 'center', justifyContent: 'center', fontSize: '2rem'
-        }}>
+        <div className='ppdiv' style={{height: `calc(100vh - ${headerheight}px)`, marginTop: `${headerheight}px`}}>
             {type} in Progress 👷‍♂️
         </div>
     )

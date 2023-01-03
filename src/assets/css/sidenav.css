@@ -3,3 +3,13 @@
     width: 53% !important;
     padding: 1rem 2rem;
 }
+
+.linkdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Play", sans-serif;
+    font-size: 20;
+    font-weight: 600;
+}
