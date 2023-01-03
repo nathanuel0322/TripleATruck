@@ -5,9 +5,9 @@ import '../assets/css/services.css'
 export default function Services() {
     return(
         <section className="title1 cid-trmAg1lINL" id="title1-o">
-            <div className="container">
+            <div className="container-serv">
                 <div className="title mbr-pb-5 align-center">
-                    <h3 className="mbr-section-title mbr-fonts-style mbr-bold mbr-white display-2">Game Coaches</h3>
+                    <h3 className="mbr-section-title-serv mbr-fonts-style mbr-bold mbr-white display-2-serv">Game Coaches</h3>
                     
                 </div>
                 <div className="mbr-row mbr-pt-5">

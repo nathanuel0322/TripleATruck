@@ -30,11 +30,11 @@ export default function Contact() {
             </div>
         :
         <section className="contacts2 cid-trnpRGggDT" id="contacts2-14">
-	        <div className="container">
+	        <div className="container-con">
                 <div className="title mbr-pb-4 align-center">
-                    <h3 className="mbr-section-title mbr-fonts-style mbr-white mbr-pb-3 display-2-con">Contact Us</h3>
+                    <h3 className="mbr-section-title-con mbr-fonts-style mbr-white mbr-pb-3 display-2-con">Contact Us</h3>
                 </div>
-                <div className="mbr-row main-row mbr-jc-c">
+                <div className="mbr-row-con main-row mbr-jc-c">
                     <div className="first-element mbr-col-md-12 mbr-col-sm-12 mbr-column mbr-flex mbr-jc-c mbr-col-lg-6">
                         <div className="contacts-block mbr-pb-4 mbr-flex mbr-jc-c mbr-column">
                             <div className="contacts-box">
@@ -72,7 +72,7 @@ export default function Contact() {
                     <div className="form-block second-element mbr-col-md-12 mbr-col-sm-12 mbr-column mbr-flex mbr-jc-c mbr-col-lg-6 mbr-m-auto">
                         <div className="" data-form-type="formoid">
                             <form className="mbr-form i-amphtml-form" id="contactme" onSubmit={sendEmail}>
-                                <div className="dragArea mbr-form-row">
+                                <div className="dragArea mbr-form-row-con">
                                     <div className="mbr-col-lg-6 mbr-col-md-12 mbr-col-sm-12 field">
                                         <input name="from_name" className="field-input display-7" type="text" placeholder="First Name" id="form[data][0][1]-contacts2-14" />
                                     </div>

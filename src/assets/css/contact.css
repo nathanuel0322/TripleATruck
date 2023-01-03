@@ -4,7 +4,7 @@
     background-color: #141229;
     margin-top: 5rem;
 }
-section, .container, .container-fluid {
+section, .container-con, .container-fluid {
     position: relative;
     word-wrap: break-word;
 }
@@ -16,7 +16,7 @@ section {
     overflow: hidden;
     padding: 30px 0;
 }
-.container {
+.container-con {
     padding: 0 1rem;
     width: 100%;
     margin-right: auto;
@@ -28,12 +28,9 @@ section {
 .align-center {
     text-align: center;
 }
-.mbr-section-title, .mbr-section-subtitle, .card-title, .card-subtitle {
+.mbr-section-title-con, .mbr-section-subtitle, .card-title, .card-subtitle {
     letter-spacing: -1px;
     font-weight: 500;
-}
-.mbr-section-title {
-    text-shadow: 0 2px 4.8px rgb(30 29 50 / 30%);
 }
 .display-2-con {
     font-family: 'Oswald',sans-serif;
@@ -43,20 +40,21 @@ section {
 .mbr-pb-3, .mbr-py-3 {
     padding-bottom: 1.5rem;
 }
-.mbr-bold {
+.mbr-bold-con {
     font-weight: 700;
 }
-.mbr-white {
+.mbr-white-con {
     color: #ffffff;
 }
-.mbr-section-title {
+.mbr-section-title-con {
     margin: 0;
     padding: 0;
     font-style: normal;
     line-height: 1.2;
     width: 100%;
+    text-shadow: 0 2px 4.8px rgb(30 29 50 / 30%);
 }
-.mbr-row, .mbr-form-row {
+.mbr-row-con, .mbr-form-row-con {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -207,7 +205,7 @@ form .btn, form .mbr-section-btn {
     padding: 0rem 1rem;
 }
 @media (max-width: 767px) {
-    .container {
+    .container-con {
         max-width: 540px;
     }
     .align-left, .align-center, .align-right {

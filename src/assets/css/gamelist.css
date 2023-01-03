@@ -1,11 +1,11 @@
 .cid-trndaP1tRj {
-    padding-top: 10rem;
+    padding-top: 75px;
     padding-bottom: 75px;
     background-color: #141229;
     color: white;
 }
 
-section, .container, .container-fluid {
+section, .container-game, .container-fluid {
     position: relative;
     word-wrap: break-word;
 }
@@ -19,7 +19,7 @@ section {
     padding: 30px 0;
 }
 
-.container {
+.container-game {
     padding: 0 1rem;
     width: 100%;
     margin-right: auto;
@@ -30,12 +30,12 @@ section {
     text-align: center;
 }
 
-.mbr-section-title, .mbr-section-subtitle, .card-title, .card-subtitle {
+.mbr-section-title-game, .mbr-section-subtitle, .card-title, .card-subtitle {
     letter-spacing: -1px;
     font-weight: 500;
 }
 
-.mbr-section-title {
+.mbr-section-title-game {
     text-shadow: 0 2px 4.8px rgb(30 29 50 / 30%);
     margin: 0;
     padding: 0;
@@ -44,7 +44,7 @@ section {
     width: 100%;
 }
 
-.display-2 {
+.display-2-game {
     font-family: 'Oswald',sans-serif;
     font-size: 2.5rem;
     line-height: 1.2;
@@ -54,7 +54,7 @@ section {
     padding-bottom: 2rem;
 }
 
-.display-5 {
+.display-5-game {
     font-family: 'Oswald',sans-serif;
     font-size: 1.5rem;
     line-height: 1.2;
@@ -73,7 +73,7 @@ section {
     padding-top: 2rem;
 }
 
-.mbr-row, .mbr-form-row {
+.mbr-row-game, .mbr-form-row-game {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -87,11 +87,11 @@ section {
     justify-content: center;
 }
 
-.card {
+.card-game {
     border-radius: 10px;
 }
 
-.card {
+.card-game {
     position: relative;
     background-color: transparent;
     border: none;
@@ -105,7 +105,7 @@ section {
     background-color: #292845;
 }
 
-.card .card-wrapper {
+.card-game .card-wrapper {
     height: 100%;
 }
 
@@ -117,7 +117,7 @@ section {
     position: relative;
 }
 
-.card .card-img {
+.card-game .card-img {
     width: auto;
     border-radius: 0;
 }
@@ -175,8 +175,13 @@ section {
     padding-top: 1.5rem;
 }
 
-@media (max-width: 767px) {
-    .container {
+@media (min-width: 768px) {
+    .container-game {
+        max-width: 720px;
+    }
+}
+@media (max-width: 768px) {
+    .container-game {
         max-width: 540px;
     }
     .align-left, .align-center, .align-right {
@@ -189,25 +194,40 @@ section {
         -ms-flex: 0 0 100%;
         -webkit-box-flex: 0;
         flex: 0 0 100%;
-        max-width: 100%;
+        max-width: 75%;
         padding-right: 1rem;
         padding-left: 1rem;
     }
     .card .card-wrapper {
         flex-direction: column;
     }
-}
-
-@media (max-width: 768px) {
-    .display-2 {
+    .card-game:not(.last-child) {
+        padding-bottom: 2rem;
+    }
+    .display-2-game {
         font-size: 2rem;
         font-size: calc( 1.525rem + (2.5 - 1.525) * ((100vw - 20rem) / (48 - 20)));
         line-height: calc( 1.4 * (1.525rem + (2.5 - 1.525) * ((100vw - 20rem) / (48 - 20))));
     }
-    .display-5 {
+    .display-5-game {
         font-size: 1.2rem;
         font-size: calc( 1.175rem + (1.5 - 1.175) * ((100vw - 20rem) / (48 - 20)));
         line-height: calc( 1.4 * (1.175rem + (1.5 - 1.175) * ((100vw - 20rem) / (48 - 20))));
+    }
+}
+
+@media (min-width: 991px) {
+    .mbr-col-lg-3 {
+        -ms-flex: 0 0 25%;
+        -webkit-box-flex: 0;
+        flex: 0 0 25%;
+        max-width: 25%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-bottom: 3rem;
+    }
+    .container-game {
+        max-width: 960px;
     }
 }
 
@@ -215,5 +235,8 @@ section {
     .mbr-px-4, .mbr-px-5 {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+    .md-pb {
+        padding-bottom: 2rem;
     }
 }

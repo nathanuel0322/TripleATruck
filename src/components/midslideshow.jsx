@@ -7,9 +7,12 @@ import Slide from "./home/Slide";
 
 export default function MidSlideShow() {
     const [headerheight, setHeaderheight] = useState(0)
+    const [headermargin, setHeadermargin] = useState(0)
     useEffect(() => {
         setHeaderheight(document.getElementsByClassName("horizontal-menu")[0].offsetHeight)
+        setHeadermargin(document.getElementsByClassName("navbar")[0].offsetHeight - document.getElementsByClassName("cid-trIi3lod2Q")[0].offsetHeight)
     }, [])
+
     const AutoplaySlider = withAutoplay(AwesomeSlider);
     return (
         <AutoplaySlider
@@ -29,7 +32,7 @@ export default function MidSlideShow() {
                     children: <Slide image={'header-bg.jpg'} />
                 }
             ]}
-            style={{ marginTop: '5.2rem' }}
+            style={{ marginTop: headermargin }}
         />
     )
 }
