@@ -1,5 +1,4 @@
 import React from "react";
-import Stylesheet from "reactjs-stylesheet";
 import '../assets/css/packages.css'
 
 export default function Packages() {
@@ -26,17 +25,6 @@ export default function Packages() {
                                         <span className="price-value bold-pack display-2-pack">500</span>
                                     </div>
 					            </div>
-                                <div className="items-list-wrap">
-                                    <ul className="items-list">
-                                        {["Personal Use", "One Site", "Email Support", "Email Support", "Email Support", "Email Support"].map((item, index) => {
-                                            return (
-                                                <li className="list-item" key={index}>
-                                                    <span className="item-text fonts-style display-7">{item}</span>
-                                                </li>
-                                            )
-                                        })}
-                                    </ul>
-                                </div>
 				            </div>
 			            </div>
                         <div className="card card2 col-sm-12-pack col-md-6-pack md-pb-pack col-lg-3-pack align-center"
@@ -59,7 +47,7 @@ export default function Packages() {
                                 </div>
                             </div>
                         </div>
-                        <div className="card card3 col-sm-12-pack col-md-6-pack col-lg-3-pack align-center"
+                        <div className="card card3 col-sm-12-pack col-md-6-pack md-pb-pack col-lg-3-pack align-center"
                             onMouseOver={() => {
                                 document.getElementById("card3title").style.color = "#1bc2ca"
                             }}
@@ -76,32 +64,6 @@ export default function Packages() {
                                         <span className="price-sign bold fonts-style display-5-pack">$</span>
                                         <span className="price-value bold fonts-style display-2-pack">475</span>
                                     </div>
-                                    
-                                </div>
-                                <div className="items-list-wrap">
-                                    <ul className="items-list">
-                                        
-                                        
-                                        
-                                    <li className="list-item">
-                                            
-                                            <span className="item-text fonts-style display-7">Commercial Use</span>
-                                        </li><li className="list-item">
-                                            
-                                            <span className="item-text fonts-style display-7">Unlimited sites</span>
-                                        </li><li className="list-item">
-                                            
-                                            <span className="item-text fonts-style display-7">Premium Support</span>
-                                        </li><li className="list-item">
-                                            
-                                            <span className="item-text fonts-style display-7">Premium Support</span>
-                                        </li><li className="list-item">
-                                            
-                                            <span className="item-text fonts-style display-7">Premium Support</span>
-                                        </li><li className="list-item">
-                                            
-                                            <span className="item-text fonts-style display-7">Premium Support</span>
-                                        </li></ul>
                                 </div>
                             </div>
                         </div>
@@ -120,34 +82,8 @@ export default function Packages() {
                                 <div className="card-price-wrap price-wrap4">
                                     <div className="card-price">
                                         <span className="price-sign bold fonts-style display-5-pack">$</span>
-                                        <span className="price-value bold fonts-style display-2-pack">200</span>
+                                        <span className="price-value bold fonts-style display-2-pack">100</span>
                                     </div>
-                                    
-                                </div>
-                                <div className="items-list-wrap">
-                                    <ul className="items-list">
-                                        
-                                        
-                                        
-                                    <li className="list-item">
-                                            
-                                            <span className="item-text fonts-style display-7">Lorem ipsum</span>
-                                        </li><li className="list-item">
-                                            
-                                            <span className="item-text fonts-style display-7">Lorem ipsum</span>
-                                        </li><li className="list-item">
-                                            
-                                            <span className="item-text fonts-style display-7">Lorem ipsum</span>
-                                        </li><li className="list-item">
-                                            
-                                            <span className="item-text fonts-style display-7">Lorem ipsum</span>
-                                        </li><li className="list-item">
-                                            
-                                            <span className="item-text fonts-style display-7">Lorem ipsum</span>
-                                        </li><li className="list-item">
-                                            
-                                            <span className="item-text fonts-style display-7">Lorem ipsum</span>
-                                        </li></ul>
                                 </div>
                             </div>
                         </div>
@@ -157,6 +93,3 @@ export default function Packages() {
         </div>
     );
 }
-
-const packagesstyles = Stylesheet.create({
-})

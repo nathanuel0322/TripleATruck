@@ -13,7 +13,7 @@ export default function Services() {
                     {textarr.map((text, index) => {
                         return (
                             <div className="col-sm-12-serv col-md-12-serv col-lg-6-serv" key={index} style={{margin: index === 1 && '0 auto'}}>
-                                <div className={`card-box box${index+1} flex`}>
+                                <div className={`card-box box${index+1} flex`} style={{margin: index === 1 && '0 auto'}}>
                                     <div className="text-box white align-center">
                                         <h3 className="fonts-style text-box-title display-5-serv">{text}</h3>
                                     </div>

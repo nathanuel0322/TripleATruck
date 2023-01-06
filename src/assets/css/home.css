@@ -1,0 +1,12 @@
+.hometext {
+    text-align: center;
+    color: white;
+    font-family: 'Oswald',sans-serif;
+    font-size: 2.5rem;
+    max-width: 80%;
+    margin: 1rem auto;
+}
+
+.hometext > p {
+    margin: 1.5rem auto;
+}

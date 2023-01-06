@@ -22,26 +22,22 @@ export default function TemporaryDrawer({drawerstate, drawerfunc}) {
                     {['Services', 'Packages', 'Game List', 
                     // 'Gallery', 'E-Invites', 
                     'Contact Us', 'About', 'Book Now'].map((text, index) => (
-                        <Link key={index} to={`/${text.split(" ").join("").toLowerCase()}`} 
-                            style={{
-                                textDecoration: 'none',
-                                color: index === 5 ? '#1bc2ca' : 'white',
-                                fontFamily: "'Play', sans-serif",
-                                fontSize: '1rem',
-                                fontWeight: 600,
-                                margin: '.665rem 1rem',
-                                borderColor: index === 5 && '#1bc2ca',
-                                borderRadius: index === 5 && 40,
-                                textTransform: index === 5 && 'uppercase',
-                                padding: index === 5 && '.625rem 2rem',
-                                width: index === 5 && '100%',
-                                textAlign: index === 5 && 'center',
-                                border: index === 5 && '2px solid'
-                            }}
-                            onClick={() => drawerfunc(false)}
-                        >
-                            {text}
-                        </Link>
+                        index !== 5 ?
+                            <Link key={index} to={`/${text.split(" ").join("").toLowerCase()}`}
+                                style={{textDecoration: 'none', color: 'white', fontFamily: "'Play', sans-serif", fontSize: '1rem', fontWeight: 600,
+                                    margin: '.665rem 1rem'
+                                }}
+                                onClick={() => drawerfunc(false)}
+                            >
+                                {text}
+                            </Link>
+                        :
+                            <a class="btn btn-md bold btn-primary-outline display-7" style={{textAlign: 'center', color: '#1bc2ca', borderColor: '#1bc2ca', 
+                                borderRadius: 40, textTransform: 'uppercase', padding: '.625rem 2rem', width: '25%', border: '2px solid'}} target="_blank" 
+                                rel="noreferrer" href="https://pkcjftgpluneupxnjv.10to8.com"
+                            >
+                                Book Now
+                            </a>  
                     ))}
                 </div>
             </div>

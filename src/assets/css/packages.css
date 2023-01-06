@@ -11,10 +11,15 @@
 
 .container-pack {
     padding: 0 1rem;
-    width: 100%;
+    /* width: 100%; */
     margin-right: auto;
     margin-left: auto;
 }
+
+.row-pack {
+    width: 100%;
+}
+
 .row-pack, .form-row-pack {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -30,7 +35,8 @@
 }
 
 .card-head {
-    padding: 1.5rem 2rem;
+    /* padding: 1.5rem 2rem; */
+    padding: 1rem 2rem;
 }
 
 .display-5-pack {
@@ -107,10 +113,13 @@
     border-bottom: none;
 }
 
-.cid-traOecPbxG .price-wrap2 {
-    background-color: #5c9ddd;
+.card-price-wrap {
     border-bottom-left-radius: 0.9375rem;
     border-bottom-right-radius: 0.9375rem;
+}
+
+.cid-traOecPbxG .price-wrap2 {
+    background-color: #5c9ddd;
 }
 
 .cid-traOecPbxG .price-wrap3 {
@@ -122,7 +131,8 @@
 }
 
 .card .card-title {
-    transition: 0.5s;
+    /* transition: 0.5s; */
+    margin: 0.5rem 0rem;
 }
 
 .col-md-6-pack {
