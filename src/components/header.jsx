@@ -26,7 +26,6 @@ export default function Header({drawerfunc}) {
                         <IconButton
                             aria-label="menu"
                             size="large"
-                            sx={{ mr: 2 }}
                             onClick={() => {
                                 drawerfunc(true)
                             }}

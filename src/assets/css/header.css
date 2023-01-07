@@ -207,7 +207,6 @@ section {
 }
 .container-head {
   padding: 0 1rem;
-  width: 100%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 0.25rem;
@@ -245,10 +244,10 @@ section {
   }
 }
 @media (max-width: 991px) {
-  .menu-container-head {
+  /* .menu-container-head {
     max-width: 100%;
     padding: 0 2rem;
-  }
+  } */
 }
 @media (min-width: 991px) {
   .container-head {

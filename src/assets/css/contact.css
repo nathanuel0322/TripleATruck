@@ -17,7 +17,6 @@ section {
 }
 .container-con {
     padding: 0 1rem;
-    width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -50,8 +49,9 @@ section {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-left: -1rem;
-    margin-right: -1rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 .pb-4, .py-4 {
     padding-bottom: 2rem;
@@ -101,6 +101,9 @@ form .field {
     font-family: 'Play',sans-serif;
     font-size: 1rem;
     line-height: 1.6;
+}
+.dragArea > input, .dragArea > textarea {
+    margin: 0.5rem auto;
 }
 .inputs-con, form textarea, form select {
     padding: 11px 1rem;
@@ -182,6 +185,22 @@ form .btn, form .section-btn {
     text-align: center;
     padding: 0rem 1rem;
 }
+.contacts-block {
+    margin: 0px 1rem;
+}
+.formdiv {
+    margin: 0px 1rem;
+}
+.field {
+    max-width: 70% !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.field-input::placeholder {
+    color: white;
+    text-align: start;
+}
 @media (min-width: 768px) {
     .col-md-12-con {
         -ms-flex: 0 0 100%;
@@ -239,6 +258,7 @@ form .btn, form .section-btn {
     .cid-trnpRGggDT .main-row {
         margin-left: -2rem;
         margin-right: -2rem;
+        flex-direction: row;
     }
     .cid-trnpRGggDT .main-row > * {
         padding-left: 2rem;
@@ -248,9 +268,18 @@ form .btn, form .section-btn {
         -ms-flex: 0 0 50%;
         -webkit-box-flex: 0;
         flex: 0 0 50%;
-        max-width: 50%;
+        max-width: 40%;
         padding-right: 1rem;
         padding-left: 1rem;
+    }
+    .inputs-con {
+        max-width: 39%;
+    }
+    .inputs-con:first-child {
+        margin-right: 0.5rem;
+    }
+    .inputs-con:last-child {
+        margin-left: 0.5rem;
     }
 }
 @media (max-width: 992px) {
@@ -259,5 +288,8 @@ form .btn, form .section-btn {
     }
     .cid-trnpRGggDT .first-element {
         padding-bottom: 2rem;
+    }
+    .form-block {
+        padding: 1rem;
     }
 }

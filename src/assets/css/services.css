@@ -141,7 +141,6 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-4, .display-5-serv, .di
 }
 .container-serv {
     padding: 0 1rem;
-    width: 100%;
     margin-right: auto;
     margin-left: auto;
 }

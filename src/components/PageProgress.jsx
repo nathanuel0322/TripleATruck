@@ -7,7 +7,7 @@ export default function PageProgress({type}) {
         setHeaderheight(document.getElementsByClassName("horizontal-menu")[0].offsetHeight)
     }, [])
     return (
-        <div className='ppdiv' style={{height: `calc(100vh - ${headerheight}px)`, marginTop: `${headerheight}px`}}>
+        <div className='ppdiv' style={{height: `calc(100vh - ${headerheight}px)`}}>
             {type} in Progress 👷‍♂️
         </div>
     )

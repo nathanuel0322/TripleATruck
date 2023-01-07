@@ -6,7 +6,6 @@ export default function Gamelist() {
         {system: "Xbox Series X", image: require("../assets/images/XBX.jpeg")},
         {system: "PS4 Pro", image: require("../assets/images/Ps4Pro.jpg")},
         {system: "Playstation VR", image: require("../assets/images/PSVR.jpg")},
-        {system: "Xbox One X", image: require("../assets/images/XboxOneX.jpg")},
         {system: "Nintendo Switch", image: require("../assets/images/Switch.jpg")},
         {system: "Fire Tablet", image: require("../assets/images/firetab.jpeg")}
     ];
