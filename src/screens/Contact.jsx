@@ -74,10 +74,10 @@ export default function Contact() {
                             <form className="form i-amphtml-form" id="contactme" onSubmit={sendEmail}>
                                 <div className="dragArea form-row-con">
                                     <div className="col-lg-6-con col-md-12-con col-sm-12 field">
-                                        <input name="from_name" className="field-input display-7" type="text" placeholder="First Name" id="form[data][0][1]-contacts2-14" />
+                                        <input name="from_name" className="inputs-con field-input display-7" type="text" placeholder="First Name" id="form[data][0][1]-contacts2-14" />
                                     </div>
                                     <div className="col-lg-6-con col-md-12-con col-sm-12 field">
-                                        <input name="user_email" className="field-input display-7" type="email" placeholder="E-mail Address" data-form-field="E-mail" id="form[data][2][1]-contacts2-14" />
+                                        <input name="user_email" className="inputs-con field-input display-7" type="email" placeholder="E-mail Address" data-form-field="E-mail" id="form[data][2][1]-contacts2-14" />
                                     </div>
                                     <div className="col-lg-12 col-md-12-con col-sm-12 field">
                                         <textarea className="field-input display-7" name="form[data][2][1]" placeholder="Message" data-form-field="Message" id="form[data][4][1]-contacts2-14"></textarea>

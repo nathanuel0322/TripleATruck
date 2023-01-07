@@ -1,0 +1,16 @@
+.abouttext {
+    text-align: center;
+    color: white;
+    font-family: 'Oswald',sans-serif;
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin: 3rem auto;
+}
+
+.abouttext > p {
+    margin: 1.5rem auto;
+}
+
+.abouttext > h1 {
+    font-weight: 500;
+}

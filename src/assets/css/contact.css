@@ -1,4 +1,4 @@
-.cid-trnpRGggDT {
+    .cid-trnpRGggDT {
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: #141229;
@@ -102,7 +102,7 @@ form .field {
     font-size: 1rem;
     line-height: 1.6;
 }
-form input, form textarea, form select {
+.inputs-con, form textarea, form select {
     padding: 11px 1rem;
     line-height: 1.6;
     width: 100%;

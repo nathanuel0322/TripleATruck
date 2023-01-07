@@ -10,7 +10,7 @@ import Packages from './screens/Packages';
 import Gamelist from './screens/Gamelist';
 import Contact from './screens/Contact';
 import EInvites from './screens/E-Invites';
-import About from './screens/About';
+import AboutUs from './screens/AboutUs';
 import './assets/css/global.css';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
           <Route exact path='/services' element={<Services />}/>
           <Route exact path='/gamelist' element={<Gamelist />} />
           <Route exact path='/contactus' element={<Contact />} />
-          <Route exact path='/about' element={<About />} />
+          <Route exact path='/about' element={<AboutUs />} />
           <Route exact path='/e-invites' element={<EInvites />} />
         </Routes>
       <TemporaryDrawer drawerstate={drawerOpen} drawerfunc={setDrawerOpen} />

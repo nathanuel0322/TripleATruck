@@ -20,9 +20,10 @@ export default function TemporaryDrawer({drawerstate, drawerfunc}) {
                 </div>
                 <div className='linkdiv'>
                     {['Services', 'Packages', 'Game List', 
-                    // 'Gallery', 'E-Invites', 
+                    // 'Gallery', 
+                    'E-Invites', 
                     'Contact Us', 'About', 'Book Now'].map((text, index) => (
-                        index !== 5 ?
+                        index !== 6 ?
                             <Link key={index} to={`/${text.split(" ").join("").toLowerCase()}`}
                                 style={{textDecoration: 'none', color: 'white', fontFamily: "'Play', sans-serif", fontSize: '1rem', fontWeight: 600,
                                     margin: '.665rem 1rem'
@@ -32,8 +33,8 @@ export default function TemporaryDrawer({drawerstate, drawerfunc}) {
                                 {text}
                             </Link>
                         :
-                            <a class="btn btn-md bold btn-primary-outline display-7" style={{textAlign: 'center', color: '#1bc2ca', borderColor: '#1bc2ca', 
-                                borderRadius: 40, textTransform: 'uppercase', padding: '.625rem 2rem', width: '25%', border: '2px solid'}} target="_blank" 
+                            <a key={index} className="btn btn-md bold btn-primary-outline display-7" style={{textAlign: 'center', color: '#1bc2ca', borderColor: '#1bc2ca', 
+                                borderRadius: 40, textTransform: 'uppercase', padding: '.625rem 2rem', width: '45%', border: '2px solid'}} target="_blank" 
                                 rel="noreferrer" href="https://pkcjftgpluneupxnjv.10to8.com"
                             >
                                 Book Now

@@ -1,0 +1,39 @@
+::placeholder{
+    text-align: center;
+    color: blue;
+}
+
+.inputs {
+    width: 100%; 
+    text-align: center; 
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 0.75rem;
+    background: transparent;
+    line-height: 2;
+    border: none;
+}
+
+#invitediv {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+}
+
+.inviteform {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.1rem;
+    margin-left: 1rem;
+}
+
+#saveimage {
+    margin-top: 4vh;
+    width: 15rem;
+    background-color: orange;
+    font-size: 7vw;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 25px;
+}
