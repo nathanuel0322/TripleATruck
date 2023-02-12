@@ -50,72 +50,74 @@ export default function EInvites() {
     }
 
   return (
-    // <div>
-    //     <div id='CardtoSave'>
-    //         <img style={Object.assign({}, aboutstyles.image,)} src={BDayCardPic} alt="Rectangle Poster" height="100%" width="100%" />
-    //         <div id='invitediv' style={{marginTop: topdivmargin}}>
-    //             <form onSubmit={handleSubmit} className='inviteform'>
-    //                 <label>
-    //                     <input 
-    //                         className='inputs'
-    //                         type="text" 
-    //                         name="ChildName" 
-    //                         placeholder="Child's Name"
-    //                     />
-    //                 </label>
-    //                 <label style={{marginLeft: '2%'}}>
-    //                     <input 
-    //                         className='inputs'
-    //                         type="text"
-    //                         name="Location" 
-    //                         placeholder="Location"
-    //                     />
-    //                 </label>
-    //                 <label style={{maxWidth: '3rem'}}>
-    //                     <input 
-    //                         className='inputs'
-    //                         type="text" 
-    //                         name="Party Time" 
-    //                         placeholder="Party Time"
-    //                     />
-    //                 </label>
-    //                 <label style={{maxWidth: '4.5rem'}}>
-    //                     <input 
-    //                         className='inputs'
-    //                         type="text"
-    //                         name="Phone Number" 
-    //                         placeholder="Phone #"
-    //                     />
-    //                 </label>
-    //             </form>
-    //             {/* <form style={{marginLeft: '24%'}}>
-    //             </form>             */}
-    //         </div>
-    //         {/* <div style={{display: 'flex', flexDirection: 'row', marginLeft: '15%',
-    //             marginTop: !changetextvw435 ? '-3.5vw' : changetextvw400 ? (changetextvw350 ? '-4vw' : '-3.5vw')  : '-3.5vw', }}
-    //         >
-    //             <form onSubmit={handleSubmit}>
-    //             </form>
-    //             <form style={{marginLeft: '24%'}}>
-    //             </form>            
-    //         </div> */}
+    <div>
+        <div id='CardtoSave'>
+            <img style={Object.assign({}, aboutstyles.image,)} src={BDayCardPic} alt="Rectangle Poster" height="100%" width="100%" />
+            <div id='invitediv' style={{marginTop: topdivmargin}}>
+                <form onSubmit={handleSubmit} className='inviteform'>
+                    <label>
+                      <input 
+                        className='inputs'
+                        type="text" 
+                        name="ChildName" 
+                        placeholder="Child's Name"
+                      />
+                    </label>
+                    <label>
+                        <input 
+                          className='inputs'
+                          type="text"
+                          name="Location" 
+                          placeholder="Location"
+                          id="locationinput"
+                        />
+                    </label>
+                    <label style={{maxWidth: '3rem'}}>
+                        <input 
+                            className='inputs'
+                            type="text" 
+                            name="Party Time" 
+                            placeholder="Party Time"
+                        />
+                    </label>
+                    <label style={{maxWidth: '4.5rem'}}>
+                        <input 
+                            className='inputs'
+                            type="text"
+                            name="Phone Number" 
+                            placeholder="Phone #"
+                            id='phoneinput'
+                        />
+                    </label>
+                </form>
+                {/* <form style={{marginLeft: '24%'}}>
+                </form>             */}
+            </div>
+            {/* <div style={{display: 'flex', flexDirection: 'row', marginLeft: '15%',
+                marginTop: !changetextvw435 ? '-3.5vw' : changetextvw400 ? (changetextvw350 ? '-4vw' : '-3.5vw')  : '-3.5vw', }}
+            >
+                <form onSubmit={handleSubmit}>
+                </form>
+                <form style={{marginLeft: '24%'}}>
+                </form>            
+            </div> */}
             
-    //     </div>
-    //     <div style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', fontFamily: "'Teko', sans-serif"}}>
-    //             <input id="saveimage" type="submit" value='Save Image'
-    //                 onClick={() => {
-    //                     // MUST FIX TOP DIV MARGIN FOR LARGE SCREENS LATER ON
-    //                     settopdivmargin(!changetextvw435 ? '-14vw' : changetextvw400 ? (changetextvw350 ? '-16.5vw' : '-15vw')  : '-14vw');
-    //                     settopdivchanged(true);
-    //                     console.log("Export called");
-    //                 }}
-    //             />
-    //     </div>
-    //     <div style={{display: 'flex', justifyContent: 'center', fontFamily: "'Teko', sans-serif", color: 'white', fontSize: '4vw', marginTop: '4vw', textAlign: 'center'}}>
-    //         If you need to make any changes after saving image, reload the page first!!!
-    //     </div>
-    // </div>
-    <PageProgress type={"Page"} />
+        </div>
+        <div style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', fontFamily: "'Teko', sans-serif"}}>
+                <input id="saveimage" type="submit" value='Save Image'
+                    onClick={() => {
+                        // MUST FIX TOP DIV MARGIN FOR LARGE SCREENS LATER ON
+                        settopdivmargin(!changetextvw435 ? '-14vw' : changetextvw400 ? (changetextvw350 ? '-16.5vw' : '-15vw')  : '-14vw');
+                        settopdivchanged(true);
+                        console.log("Export called");
+                    }}
+                />
+        </div>
+        <div id='reload' style={{display: 'flex', justifyContent: 'center', fontFamily: "'Teko', sans-serif", color: 'white', fontSize: '4vw', marginTop: '4vw', textAlign: 'center'}}>
+            If you need to make any changes after saving image, reload the page first!!!
+        </div>
+    </div>
+    // <PageProgress type={"Page"} />
   )
 }
 

@@ -13,7 +13,7 @@ export default function Contact() {
         const formbutton = document.getElementById("sendform");
         formbutton.disabled = true;
         formbutton.value = "Sending...";
-        emailjs.sendForm('service_rb0yd56', 'template_879ls1m', '#contactme', 'dbCtiR00Etae1Fo2Q')
+        emailjs.sendForm('service_fgye525', 'template_879ls1m', '#contactme', 'dbCtiR00Etae1Fo2Q')
         .then((result) => {
             setFormfilled(true);
             console.log(result.text);
