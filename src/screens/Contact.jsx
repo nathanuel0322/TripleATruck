@@ -4,21 +4,24 @@ import emailjs from '@emailjs/browser';
 
 export default function Contact() {
     const [headerheight, setHeaderheight] = useState(0)
+    const [buttontext, setButtonText] = useState("Send")
     useEffect(() => {
         setHeaderheight(document.getElementsByClassName("horizontal-menu")[0].offsetHeight)
     }, [])
     const [formfilled, setFormfilled] = useState(false);
     const sendEmail = (e) => {
         e.preventDefault();
-        const formbutton = document.getElementById("sendform");
+        const formbutton = document.getElementById("sendbutton");
         formbutton.disabled = true;
-        formbutton.value = "Sending...";
-        emailjs.sendForm('service_fgye525', 'template_879ls1m', '#contactme', 'dbCtiR00Etae1Fo2Q')
+        setButtonText("Sending...")
+        emailjs.sendForm('service_fgye525', 'template_2jw41u9', '#contactme', 'dbCtiR00Etae1Fo2Q')
         .then((result) => {
             setFormfilled(true);
             console.log(result.text);
+            setButtonText("Send")
         }, (error) => {
             console.log(error.text);
+            setButtonText("Send")
         });
     };
 
@@ -80,10 +83,10 @@ export default function Contact() {
                                     <input name="user_email" className="inputs-con field-input display-7" type="email" placeholder="E-mail Address" data-form-field="E-mail" id="form[data][2][1]-contacts2-14" />
                                     {/* </div> */}
                                     {/* <div className="col-lg-12 col-md-12-con col-sm-12 field"> */}
-                                    <textarea className="field-input display-7" name="form[data][2][1]" placeholder="Message" data-form-field="Message" id="form[data][4][1]-contacts2-14"></textarea>
+                                    <textarea name="message" className="field-input display-7" placeholder="Message" data-form-field="Message" id="form[data][4][1]-contacts2-14"></textarea>
                                     {/* </div> */}
                                     <div className="col col-md-12-con col-sm-12 section-btn align-center field" id="sendform">
-                                        <button type="submit" className="btn btn-md btn-primary btn-form display-7">Send</button>
+                                        <button type="submit" className="btn btn-md btn-primary btn-form display-7" id="sendbutton">{buttontext}</button>
                                     </div>
                                 </div>
                             </form>
