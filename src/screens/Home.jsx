@@ -7,7 +7,7 @@ import { colorSet } from "../GlobalStyles";
 
 
 export default function Home() {
-    const [ref, inView] = useInView({
+    const [reference, inView] = useInView({
         threshold: 0.05,
         triggerOnce: false
     });
@@ -15,10 +15,11 @@ export default function Home() {
         opacity: inView ? 1 : 0,
         transform: inView ? 'translateY(0px)' : 'translateY(100px)'
     });
+    
     return (
         <div>
             <MidSlideShow />
-            <animated.div className="hometext" style={props} ref={ref}>
+            <animated.div className="hometext" style={props} ref={reference}>
                 <p>
                     State-of-the-art gaming literally in your backyard!
                 </p>        
