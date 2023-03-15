@@ -26,9 +26,7 @@ export default function Header({drawerfunc}) {
                         <IconButton
                             aria-label="menu"
                             size="large"
-                            onClick={() => {
-                                drawerfunc(true)
-                            }}
+                            onClick={() => drawerfunc(true)}
                         >
                             <DehazeIcon sx={{color: 'white', fontSize: 40}} />
                         </IconButton>
