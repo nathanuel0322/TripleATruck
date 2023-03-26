@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.0382c0ca.css",
-    "main.js": "./static/js/main.54996308.js",
+    "main.js": "./static/js/main.f3cb732e.js",
     "static/media/inside1.jpg": "./static/media/inside1.89667c447253f444290d.jpg",
     "static/media/inside2.jpg": "./static/media/inside2.b18c1a5c5e811f2e80de.jpg",
     "static/media/inside3.jpg": "./static/media/inside3.2840e48aa310468d6d2f.jpg",
@@ -13,6 +13,7 @@
     "static/media/wallpaper1.jpg": "./static/media/wallpaper1.265b8b54d56ca7fec3ca.jpg",
     "static/media/wallpaper2.jpg": "./static/media/wallpaper2.6594f7747a73e45ec9dd.jpg",
     "static/media/backoftruck.jpg": "./static/media/backoftruck.9a7be7416c94498e8a73.jpg",
+    "static/media/Gaming Contract_Triple A Mobile Gaming-7.pdf": "./static/media/Gaming Contract_Triple A Mobile Gaming-7.919195c92ac42c475711.pdf",
     "static/media/sideoftruck.jpg": "./static/media/sideoftruck.cc154f242780a6eb3e79.jpg",
     "static/media/Rectangle.jpg": "./static/media/Rectangle.988889785b9e858a3720.jpg",
     "static/media/infinitygame.jpeg": "./static/media/infinitygame.412dc5ad7aec92507ab3.jpeg",
@@ -27,10 +28,10 @@
     "static/media/ps5.jpg": "./static/media/ps5.250228bfa48f0f418ea9.jpg",
     "index.html": "./index.html",
     "main.0382c0ca.css.map": "./static/css/main.0382c0ca.css.map",
-    "main.54996308.js.map": "./static/js/main.54996308.js.map"
+    "main.f3cb732e.js.map": "./static/js/main.f3cb732e.js.map"
   },
   "entrypoints": [
     "static/css/main.0382c0ca.css",
-    "static/js/main.54996308.js"
+    "static/js/main.f3cb732e.js"
   ]
 }
