@@ -39,8 +39,8 @@ export default function Home() {
                 <p>
                     Have an event coming up and you want to impress your friends? We got you!
                 </p>
-                <p style={{textDecoration: 'underline'}}>
-                    <a href="tel:+19738458300" style={{color: 'dodgerblue'}}>Book with us today!</a>
+                <p style={{textDecoration: 'underline', color: 'dodgerblue'}}>
+                    <a href="tel:+19738458300" style={{color: 'dodgerblue'}}>Click here to call for events!</a>
                 </p>
             </animated.div>
         </div>

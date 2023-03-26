@@ -1,13 +1,13 @@
 import '../assets/css/aboutus.css'
 import { colorSet } from '../GlobalStyles'
+import GamingContract from '../assets/files/Gaming Contract_Triple A Mobile Gaming-7.pdf';
 
 export default function AboutUs() {
     return (
         <div className='abouttext'>
             <h1 style={{color: colorSet.primary, fontSize: '2.5rem'}}>About Us</h1>
             <p>
-                <span style={{color: colorSet.primary}}>Triple A Mobile Gaming</span> was inspired by our 3 energetic kids: 
-                {/* <span style={{color: colorSet.primary}}> Austin, Avery, and Ava</span>. */}
+                <span style={{color: colorSet.primary}}>Triple A Mobile Gaming</span> was inspired by our 3 energetic kids:
                 <span style={{color: colorSet.primary}}> A</span>ustin, <span style={{color: colorSet.primary}}> A</span>very, and <span
                  style={{color: colorSet.primary}}> A</span>va.
             </p>
@@ -43,6 +43,11 @@ export default function AboutUs() {
                     <a style={{color: 'rgb(255, 140, 0)', textDecoration: 'underline'}} href='https://www.prestigiousgamingonwheelsplus.com/' target="_blank" rel='noreferrer'>Prestigious Gaming on Wheels Plus</a>.
                 </span>
             </p>
+          <p>
+            <a href={GamingContract} target="_blank" rel="noreferrer" style={{textDecoration: 'underline', color: 'dodgerblue'}}>
+                Click here to download and view our terms and conditions!
+            </a>
+          </p>
         </div>
     )
 }
