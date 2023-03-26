@@ -64,11 +64,6 @@ export default function Contact() {
                                         <a href='mailto:info@tripleamobilegaming.com' style={{textDecoration: 'underline', color: 'white'}} className="fonts-style bold contacts-info display-4">info@tripleamobilegaming.com</a>
                                     </div>
                                 </div>
-                                {/* <div className="icons-list social pt-4">
-                                    <a href="https://www.youtube.com/channel/UCIl8JHjLsqZNOdgBOYC_MRQ" target="_blank" className="iconfont-wrapper" rel="noreferrer">
-                                        <span className="amp-iconfont fa-facebook-f fa"><svg width="22" height="22" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="#1bc2ca"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"></path></svg></span>
-                                    </a>
-                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -76,15 +71,9 @@ export default function Contact() {
                         <div className="formdiv" data-form-type="formoid">
                             <form className="form i-amphtml-form" id="contactme" onSubmit={sendEmail}>
                                 <div className="dragArea form-row-con">
-                                    {/* <div className="col-lg-6-con col-md-12-con col-sm-12 field"> */}
                                     <input name="from_name" className="inputs-con field-input display-7" type="text" placeholder="First Name" id="form[data][0][1]-contacts2-14" />
-                                    {/* </div> */}
-                                    {/* <div className="col-lg-6-con col-md-12-con col-sm-12 field"> */}
                                     <input name="user_email" className="inputs-con field-input display-7" type="email" placeholder="E-mail Address" data-form-field="E-mail" id="form[data][2][1]-contacts2-14" />
-                                    {/* </div> */}
-                                    {/* <div className="col-lg-12 col-md-12-con col-sm-12 field"> */}
                                     <textarea name="message" className="field-input display-7" placeholder="Message" data-form-field="Message" id="form[data][4][1]-contacts2-14"></textarea>
-                                    {/* </div> */}
                                     <div className="col col-md-12-con col-sm-12 section-btn align-center field" id="sendform">
                                         <button type="submit" className="btn btn-md btn-primary btn-form display-7" id="sendbutton">{buttontext}</button>
                                     </div>

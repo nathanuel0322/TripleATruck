@@ -29,6 +29,15 @@
     color: rgb(27, 194, 202) !important;
     transition: 0.3s all;
 }
+#bookbutton {
+    text-align: center;
+    color: rgb(27, 194, 202);
+    border: 2px solid;
+    border-radius: 40px;
+    text-transform: uppercase;
+    padding: 0.625rem 2rem;
+    width: 45%;
+}
 #bookbutton:hover {
     color: white !important;
 }

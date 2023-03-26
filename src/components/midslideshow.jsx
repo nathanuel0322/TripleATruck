@@ -27,8 +27,6 @@ export default function MidSlideShow() {
                     const downloadURL = await getDownloadURL(item)
                     items.push({
                         name: item.name,
-                        // fullPath: item.fullPath,
-                        // contentType: item.contentType,
                         downloadURL: downloadURL
                     });
                 }

@@ -23,18 +23,14 @@ export default function TemporaryDrawer({drawerstate, drawerfunc}) {
                     // 'E-Invites', 
                     'Contact Us', 'About', 'Book Now'].map((text, index) => (
                         text !== "Book Now" ?
-                            <Link key={index} to={`/${text.split(" ").join("").toLowerCase()}`}
-                                className="reglinks"
+                            <Link key={index} to={`/${text.split(" ").join("").toLowerCase()}`} className="reglinks"
                                 onClick={() => drawerfunc(false)}
                             >
                                 {text}
                             </Link>
                         :
-                            <a key={index} id="bookbutton" className="btn btn-md bold btn-primary-outline display-7" style={{textAlign: 'center',
-                                color: '#1bc2ca', borderColor: '#1bc2ca', 
-                                borderRadius: 40, textTransform: 'uppercase', padding: '.625rem 2rem', width: '45%', border: '2px solid'}}
-                                target="_blank" rel="noreferrer" href="https://pkcjftgpluneupxnjv.10to8.com"
-                                onClick={() => drawerfunc(false)}
+                            <a key={index} id="bookbutton" className="btn btn-md bold btn-primary-outline display-7" target="_blank"
+                                rel="noreferrer" href="https://pkcjftgpluneupxnjv.10to8.com" onClick={() => drawerfunc(false)}
                             >
                                 Book Now
                             </a>  

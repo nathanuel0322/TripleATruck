@@ -5,7 +5,6 @@ import { useSpring, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
 import { colorSet } from "../GlobalStyles";
 
-
 export default function Home() {
     const [reference, inView] = useInView({
         threshold: 0.05,
