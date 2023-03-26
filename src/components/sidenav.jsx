@@ -19,12 +19,12 @@ export default function TemporaryDrawer({drawerstate, drawerfunc}) {
                     </IconButton>
                 </div>
                 <div className='linkdiv'>
-                    {['Services', 'Packages', 'Game List', 
+                    {['Home', 'Services', 'Packages', 'Game List', 
                     // 'E-Invites', 
                     'Contact Us', 'About', 'Book Now'].map((text, index) => (
                         text !== "Book Now" ?
-                            <Link key={index} to={`/${text.split(" ").join("").toLowerCase()}`} className="reglinks"
-                                onClick={() => drawerfunc(false)}
+                            <Link key={index} to={`/${text === 'Home' ? "" : text.split(" ").join("").toLowerCase()}`}
+                                className="reglinks" onClick={() => drawerfunc(false)}
                             >
                                 {text}
                             </Link>

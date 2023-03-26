@@ -35,12 +35,12 @@ export default function Header({drawerfunc}) {
                     :
                         <div className="collapse navbar-collapse">
                             <ul className="navbar-nav nav-dropdown">
-                                {['Services', 'Packages', 'Game List', 
+                                {['Home', 'Services', 'Packages', 'Game List', 
                                 // 'E-Invites', 
                                 'Contact Us', 'About'].map((text, index) => (
                                     <li className="nav-item">
                                         <Link className="nav-link bold link white text-white display-7" key={index} 
-                                            to={`/${text.split(" ").join("").toLowerCase()}`}
+                                            to={`/${text === 'Home' ? "" : text.split(" ").join("").toLowerCase()}`}
                                         >
                                             {text}
                                         </Link>
