@@ -13,3 +13,22 @@
     font-size: 20;
     font-weight: 600;
 }
+#closeicon:hover path{
+    color: rgb(27, 194, 202) !important;
+    transition: 0.5s all;
+}
+.reglinks {
+    text-decoration: none;
+    color: white;
+    font-family: Play, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.665rem 1rem;
+}
+.reglinks:hover {
+    color: rgb(27, 194, 202) !important;
+    transition: 0.3s all;
+}
+#bookbutton:hover {
+    color: white !important;
+}

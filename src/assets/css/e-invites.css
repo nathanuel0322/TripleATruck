@@ -26,18 +26,34 @@
     justify-content: center;
     align-items: center;
     margin-top: 0.95rem;
-    /* margin-top: 5%; */
     margin-left: -0.15rem;
-    /* margin-left: -1.1%; */
+}
+#childname {
+    max-width: 15vw;
+    margin-left: 7vw;
+    font-size: 3vw;
 }
 
 #locationinput {
-    margin-left: -1.3rem;
+    margin-left: 0.6vw;
+    max-width: 22vw;
+    width: 21.5vw;
+    font-size: 1.8vw;
+    margin-top: 1vw;
 }
-
+#bdaytime {
+    margin-left: 6.5vw;
+    font-size: 1.8vw;
+    width: 16vw;
+    text-align: start;
+    margin-top: 1.9vw;
+}
 #phoneinput {
-    margin-left: 0.9rem;
+    margin-left: 6.1vw;
     font-size: 0.54rem;
+    width: 16vw;
+    margin-top: 0.8vw;
+    text-align: start;
 }
 
 /* @media (min-width:) */

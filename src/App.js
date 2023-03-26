@@ -12,6 +12,7 @@ import Contact from './screens/Contact';
 import EInvites from './screens/E-Invites';
 import AboutUs from './screens/AboutUs';
 import './assets/css/global.css';
+import PageProgress from './components/PageProgress';
 
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -25,7 +26,8 @@ function App() {
           <Route exact path='/gamelist' element={<Gamelist />} />
           <Route exact path='/contactus' element={<Contact />} />
           <Route exact path='/about' element={<AboutUs />} />
-          <Route exact path='/e-invites' element={<EInvites />} />
+          {/* <Route exact path='/e-invites' element={<EInvites />} /> */}
+          {/* <Route exact path='/e-invites' element={<PageProgress type={"Page"} />} /> */}
         </Routes>
       <TemporaryDrawer drawerstate={drawerOpen} drawerfunc={setDrawerOpen} />
     </Router>

@@ -55,40 +55,34 @@ export default function EInvites() {
             <img style={Object.assign({}, aboutstyles.image,)} src={BDayCardPic} alt="Rectangle Poster" height="100%" width="100%" />
             <div id='invitediv' style={{marginTop: topdivmargin}}>
                 <form onSubmit={handleSubmit} className='inviteform'>
-                    <label>
-                      <input 
+                    <input 
                         className='inputs'
                         type="text" 
                         name="ChildName" 
                         placeholder="Child's Name"
-                      />
-                    </label>
-                    <label>
-                        <input 
-                          className='inputs'
-                          type="text"
-                          name="Location" 
-                          placeholder="Location"
-                          id="locationinput"
-                        />
-                    </label>
-                    <label style={{maxWidth: '3rem'}}>
-                        <input 
-                            className='inputs'
-                            type="text" 
-                            name="Party Time" 
-                            placeholder="Party Time"
-                        />
-                    </label>
-                    <label style={{maxWidth: '4.5rem'}}>
-                        <input 
-                            className='inputs'
-                            type="text"
-                            name="Phone Number" 
-                            placeholder="Phone #"
-                            id='phoneinput'
-                        />
-                    </label>
+                        id="childname"
+                    />
+                    <input 
+                        className='inputs'
+                        type="text"
+                        name="Location" 
+                        placeholder="Location"
+                        id="locationinput"
+                    />
+                    <input 
+                        className='inputs'
+                        type="text" 
+                        name="Party Time" 
+                        placeholder="Party Time"
+                        id="bdaytime"
+                    />
+                    <input 
+                        className='inputs'
+                        type="text"
+                        name="Phone Number" 
+                        placeholder="Phone #"
+                        id='phoneinput'
+                    />
                 </form>
                 {/* <form style={{marginLeft: '24%'}}>
                 </form>             */}

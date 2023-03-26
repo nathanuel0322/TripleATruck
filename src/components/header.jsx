@@ -14,7 +14,9 @@ export default function Header({drawerfunc}) {
                     {/* SHOW LOGO */}
                     <div className="navbar-brand">
                         <div className="navbar-logo">
-                            <img src={require("../assets/images/logo2.png")} layout="responsive" height="70" width="70" alt="logo" className="loader" />
+                            <img src={require("../assets/images/logo2.png")} layout="responsive" height="70" width="70" alt="logo" 
+                                className="loader"
+                            />
                         </div>
                         <span className="navbar-caption-wrap">
                             <Link to="" className="navbar-caption bold white display-5">
@@ -34,17 +36,23 @@ export default function Header({drawerfunc}) {
                         <div className="collapse navbar-collapse">
                             <ul className="navbar-nav nav-dropdown">
                                 {['Services', 'Packages', 'Game List', 
-                                // 'Gallery', 
-                                'E-Invites', 'Contact Us', 'About'].map((text, index) => (
+                                // 'E-Invites', 
+                                'Contact Us', 'About'].map((text, index) => (
                                     <li className="nav-item">
-                                        <Link className="nav-link bold link white text-white display-7" key={index} to={`/${text.split(" ").join("").toLowerCase()}`}>
+                                        <Link className="nav-link bold link white text-white display-7" key={index} 
+                                            to={`/${text.split(" ").join("").toLowerCase()}`}
+                                        >
                                             {text}
                                         </Link>
                                     </li>
                                 ))}
                             </ul>
                             <div className="navbar-buttons section-btn">
-                                <a class="btn btn-md bold btn-primary-outline display-7" style={{textAlign: 'center'}} target="_blank" rel="noreferrer" href="https://pkcjftgpluneupxnjv.10to8.com">Book Now</a>               
+                                <a class="btn btn-md bold btn-primary-outline display-7" style={{textAlign: 'center'}}
+                                    target="_blank" rel="noreferrer" href="https://pkcjftgpluneupxnjv.10to8.com"
+                                >
+                                    Book Now
+                                </a>               
                             </div>
                         </div>
                     }
