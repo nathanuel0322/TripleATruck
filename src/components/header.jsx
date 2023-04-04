@@ -38,7 +38,7 @@ export default function Header({drawerfunc}) {
                                 {['Home', 'Services', 'Packages', 'Game List', 
                                 // 'E-Invites', 
                                 'Contact Us', 'About'].map((text, index) => (
-                                    <li className="nav-item">
+                                    <li className="nav-item" key={index}>
                                         <Link className="nav-link bold link white text-white display-7" key={index} 
                                             to={`/${text === 'Home' ? "" : text.split(" ").join("").toLowerCase()}`}
                                         >
@@ -48,7 +48,7 @@ export default function Header({drawerfunc}) {
                                 ))}
                             </ul>
                             <div className="navbar-buttons section-btn">
-                                <a class="btn btn-md bold btn-primary-outline display-7" style={{textAlign: 'center'}}
+                                <a className="btn btn-md bold btn-primary-outline display-7" style={{textAlign: 'center'}}
                                     target="_blank" rel="noreferrer" href="https://pkcjftgpluneupxnjv.10to8.com"
                                 >
                                     Book Now

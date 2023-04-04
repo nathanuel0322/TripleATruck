@@ -40,11 +40,10 @@ export default function EInvites() {
     const bdaypicRef = useRef(null);
     const CardtoSaveRef = useRef(null);
 
-    // useEffect(() => {
-    //     if (bdaypicRef.current && CardtoSaveRef.current) {
-    //         CardtoSaveRef.current.style.height = bdaypicRef.current.clientHeight + 'px';
-    //     }
-    // }, []);
+    useEffect(() => {
+        // show alert of screen width
+        alert("width is:", window.innerWidth);
+    }, []);
 
     // useEffect(() => {
     //     // set height of CardtoSave equal to bdaypic
