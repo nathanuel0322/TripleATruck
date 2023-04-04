@@ -26,7 +26,7 @@ function App() {
           <Route exact path='/gamelist' element={<Gamelist />} />
           <Route exact path='/contactus' element={<Contact />} />
           <Route exact path='/about' element={<AboutUs />} />
-          {/* <Route exact path='/e-invites' element={<EInvites />} /> */}
+          <Route exact path='/e-invites' element={<EInvites />} />
           {/* <Route exact path='/e-invites' element={<PageProgress type={"Page"} />} /> */}
         </Routes>
       <TemporaryDrawer drawerstate={drawerOpen} drawerfunc={setDrawerOpen} />
