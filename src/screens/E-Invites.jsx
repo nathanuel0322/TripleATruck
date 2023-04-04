@@ -42,7 +42,8 @@ export default function EInvites() {
 
     useEffect(() => {
         // show alert of screen width
-        alert("width is:", window.innerWidth);
+        alert(`width is: ${window.innerWidth} and height is: ${window.innerHeight}`);
+        // console.log("device pixel ratio:", window.devicePixelRatio);
     }, []);
 
     // useEffect(() => {
