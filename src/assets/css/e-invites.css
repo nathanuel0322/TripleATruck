@@ -10,7 +10,7 @@
 }
 
 .inputs {
-    width: 100%; 
+    /* width: 100%;  */
     text-align: center; 
     font-family: 'Oswald', sans-serif;
     color: black;
@@ -40,8 +40,8 @@
     z-index: 999;
 }
 #childname {
-    max-width: 15vw;
-    margin-left: 3vw;
+    /* max-width: 15vw; */
+    /* margin-left: 3vw; */
     font-size: 3vw;
     margin-top: 0.5vh;
 }

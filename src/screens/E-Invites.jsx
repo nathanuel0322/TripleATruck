@@ -4,6 +4,7 @@ import '../assets/css/e-invites.css';
 import html2canvas from 'html2canvas';
 import { useMediaQuery } from 'react-responsive';
 import PageProgress from '../components/PageProgress'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function EInvites() {
@@ -42,7 +43,8 @@ export default function EInvites() {
 
     useEffect(() => {
         // show alert of screen width
-        alert(`width is: ${window.innerWidth} and height is: ${window.innerHeight}`);
+        // alert(`width is: ${window.innerWidth} and height is: ${window.innerHeight}`);
+        console.log(`width is: ${window.innerWidth} and height is: ${window.innerHeight}`);
         // console.log("device pixel ratio:", window.devicePixelRatio);
     }, []);
 
@@ -88,7 +90,7 @@ export default function EInvites() {
         <div id='CardtoSave' ref={CardtoSaveRef} style={{height: `${cardtosaveheight + "px"}`}}>
             <img id="bdaypic" src={BDayCardPic} alt="Rectangle Poster" height="100%" width="100%" ref={bdaypicRef} />
             {/* <div id='invitediv'> */}
-            <form className='inviteform' style={{marginTop: topdivmargin}}>
+            {/* <form className='inviteform' style={{marginTop: topdivmargin}}>
                 <input 
                     className='inputs'
                     type="text" 
@@ -117,48 +119,39 @@ export default function EInvites() {
                     placeholder="Phone #"
                     id='phoneinput'
                 />
-            </form>
-
-                        {/* <div class="container">
-            <img src="http://www.tripleamobilegaming.com/static/media/e-invites.d21a9d01d4cc1f9073d4.jpg" id="ourimg"></img>
-
-            <div class="row" id="inputrow">
+            </form> */}
+            <div class="row" id="inputrow"  style={{marginTop: topdivmargin}}>
                 <input 
-                    class="col-sm-3"
+                    class="col-4 inputs"
                     type="text" 
                     name="ChildName" 
                     placeholder="Child's Name"
                     id="childname"
                 />
                 <input 
-                    class="col-sm-4"
+                    class="col-4 inputs"
                     type="text"
                     name="Location" 
                     placeholder="Location"
                     id="locationinput"
                 />
-                <div class="col-sm-2">
-                <!-- Third column content -->
-                </div>
-                <div class="col-sm-3">
-                <!-- Fourth column content -->
-                </div>
-                            <input 
-                                className='inputs'
-                                type="text" 
-                                name="Party Time" 
-                                placeholder="Party Time"
-                                id="bdaytime"
-                            />
-                            <input 
-                                className='inputs'
-                                type="text"
-                                name="Phone Number" 
-                                placeholder="Phone #"
-                                id='phoneinput'
-                            />
+                <input 
+                    // className='inputs'
+                    className="col-2 inputs"
+                    type="text" 
+                    name="Party Time" 
+                    placeholder="Party Time"
+                    id="bdaytime"
+                />
+                <input 
+                    className="col-2 inputs"
+                    // className='inputs'
+                    type="text"
+                    name="Phone Number" 
+                    placeholder="Phone #"
+                    id='phoneinput'
+                />
             </div>
-            </div> */}
 
 
 {/* const ourrow = document.getElementById("inputrow");
