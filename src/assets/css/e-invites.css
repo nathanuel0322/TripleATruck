@@ -44,7 +44,6 @@
     margin-left: 3vw;
     font-size: 3vw;
     margin-top: 0.5vh;
-    height: 7vh;
 }
 
 #locationinput {
@@ -67,6 +66,14 @@
     width: 16vw;
     margin-top: 0.8vw;
     text-align: start;
+}
+@media(min-width: 428px) {
+    #phoneinput {
+        margin-left: 1.8vw;
+    }
+    #childname {
+        margin-left: -3vw;
+    }
 }
 
 #bottomholder {

@@ -13,7 +13,7 @@ export default function EInvites() {
     const [cardtosaveheight, setcardtosaveheight] = useState(null);
     // const [topdivmargin, settopdivmargin] = useState(!changetextvw435 ? '-14vw' : changetextvw400 ? (changetextvw350 ? '-8.5vw' : '-14vw')  : '-3.3rem')
     
-    const [topdivmargin, settopdivmargin] = useState(!changetextvw435 ? '-14vw' : changetextvw400 ? (changetextvw350 ? '-8.5vw' : '-14vw')  : '-13.5vw')
+    const [topdivmargin, settopdivmargin] = useState(!changetextvw435 ? '-14vw' : changetextvw400 ? (changetextvw350 ? '-8.5vw' : '-14vw')  : '-12.5vw')
     
     const [topdivchanged, settopdivchanged] = useState(null);
     const firstRender = useRef(true);
@@ -118,6 +118,56 @@ export default function EInvites() {
                     id='phoneinput'
                 />
             </form>
+
+                        {/* <div class="container">
+            <img src="http://www.tripleamobilegaming.com/static/media/e-invites.d21a9d01d4cc1f9073d4.jpg" id="ourimg"></img>
+
+            <div class="row" id="inputrow">
+                <input 
+                    class="col-sm-3"
+                    type="text" 
+                    name="ChildName" 
+                    placeholder="Child's Name"
+                    id="childname"
+                />
+                <input 
+                    class="col-sm-4"
+                    type="text"
+                    name="Location" 
+                    placeholder="Location"
+                    id="locationinput"
+                />
+                <div class="col-sm-2">
+                <!-- Third column content -->
+                </div>
+                <div class="col-sm-3">
+                <!-- Fourth column content -->
+                </div>
+                            <input 
+                                className='inputs'
+                                type="text" 
+                                name="Party Time" 
+                                placeholder="Party Time"
+                                id="bdaytime"
+                            />
+                            <input 
+                                className='inputs'
+                                type="text"
+                                name="Phone Number" 
+                                placeholder="Phone #"
+                                id='phoneinput'
+                            />
+            </div>
+            </div> */}
+
+
+{/* const ourrow = document.getElementById("inputrow");
+console.log("width 1 is:", ourrow.clientWidth)
+ourrow.style.width = document.getElementById("ourimg").clientHeight + "px";
+console.log("width is:", ourrow.style.width) */}
+
+
+
                 {/* <form style={{marginLeft: '24%'}}>
                 </form>             */}
             {/* </div> */}
@@ -134,7 +184,7 @@ export default function EInvites() {
             <input id="saveimage" type="button" value={saving}
                 onClick={() => {
                     // MUST FIX TOP DIV MARGIN FOR LARGE SCREENS LATER ON
-                    settopdivmargin(!changetextvw435 ? '-14vw' : changetextvw400 ? (changetextvw350 ? '-10.5vw' : '-15vw')  : '-14vw');
+                    settopdivmargin(!changetextvw435 ? '-14vw' : changetextvw400 ? (changetextvw350 ? '-10.5vw' : '-15vw')  : '-11vw');
                     // settopdivchanged(true);
                     console.log("Export called");
                     
