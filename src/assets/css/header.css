@@ -3,11 +3,13 @@
 }
 
 .navbar-caption {
-    line-height: inherit !important;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.5rem;
+  line-height: inherit !important;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
 }
-
+.navbar-caption-wrap {
+  padding-block: 0.75rem;
+}
 .nav-link {
   margin: .667em 0.5rem !important;
   padding: 0 !important;
@@ -74,6 +76,7 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-4, .display-5, .display
   flex-wrap: wrap;
   padding-left: 0;
   min-width: 10rem;
+  justify-content: center;
 }
 ul, ol, blockquote, p {
   margin-bottom: 0;

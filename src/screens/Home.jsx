@@ -1,14 +1,14 @@
 import React from "react";
 import MidSlideShow from "../components/midslideshow";
-import  '../assets/css/home.css'
 import { useSpring, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
 import { colorSet } from "../GlobalStyles";
+import  '../assets/css/home.css'
 
 export default function Home() {
     const [reference, inView] = useInView({
         threshold: 0.05,
-        triggerOnce: false
+        triggerOnce: true
     });
     const props = useSpring({
         opacity: inView ? 1 : 0,

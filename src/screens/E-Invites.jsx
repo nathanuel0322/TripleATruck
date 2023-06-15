@@ -4,7 +4,6 @@ import '../assets/css/e-invites.css';
 import html2canvas from 'html2canvas';
 import { useMediaQuery } from 'react-responsive';
 import PageProgress from '../components/PageProgress'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function EInvites() {

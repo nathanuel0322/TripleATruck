@@ -1,9 +1,9 @@
 import React from "react"
-import '../assets/css/header.css'
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import { IconButton } from "@mui/material";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
+import '../assets/css/header.css'
 
 export default function Header({drawerfunc}) {
     const mobile = useMediaQuery({ query: '(max-width: 990px)' })
@@ -20,7 +20,7 @@ export default function Header({drawerfunc}) {
                         </div>
                         <span className="navbar-caption-wrap">
                             <Link to="" className="navbar-caption bold white display-5">
-                                TripleA
+                                Triple A Mobile Gaming - Game Truck
                             </Link>
                         </span>
                     </div>
@@ -48,7 +48,7 @@ export default function Header({drawerfunc}) {
                                 ))}
                             </ul>
                             <div className="navbar-buttons section-btn">
-                                <a className="btn btn-md bold btn-primary-outline display-7" style={{textAlign: 'center'}}
+                                <a className="btn btn-md bold btn-primary-outline display-7" style={{textAlign: 'center', minWidth: '65%'}}
                                     target="_blank" rel="noreferrer" href="https://pkcjftgpluneupxnjv.10to8.com"
                                 >
                                     Book Now
