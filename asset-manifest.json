@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.aad291e0.css",
-    "main.js": "./static/js/main.90154484.js",
+    "main.css": "./static/css/main.ab8e38b4.css",
+    "main.js": "./static/js/main.ebac068e.js",
     "static/media/inside1.jpg": "./static/media/inside1.89667c447253f444290d.jpg",
     "static/media/inside2.jpg": "./static/media/inside2.b18c1a5c5e811f2e80de.jpg",
     "static/media/inside3.jpg": "./static/media/inside3.2840e48aa310468d6d2f.jpg",
@@ -16,22 +16,22 @@
     "static/media/Gaming Contract_Triple A Mobile Gaming-7.pdf": "./static/media/Gaming Contract_Triple A Mobile Gaming-7.919195c92ac42c475711.pdf",
     "static/media/sideoftruck.jpg": "./static/media/sideoftruck.cc154f242780a6eb3e79.jpg",
     "static/media/Rectangle.jpg": "./static/media/Rectangle.988889785b9e858a3720.jpg",
-    "static/media/infinitygame.jpeg": "./static/media/infinitygame.412dc5ad7aec92507ab3.jpeg",
-    "static/media/PSVR.jpg": "./static/media/PSVR.3802516f43d99c105cf4.jpg",
-    "static/media/Invites.jpeg": "./static/media/Invites.552f7347339005099961.jpeg",
+    "static/media/infinitygame.jpeg": "./static/media/infinitygame.06f2e3c912674b858fac.jpeg",
+    "static/media/PSVR.jpg": "./static/media/PSVR.58032c0afb9c92f76143.jpg",
     "static/media/firetab.jpeg": "./static/media/firetab.3abd0d39d1b7fa3e6c0a.jpeg",
+    "static/media/Invites.jpeg": "./static/media/Invites.57a085651282283d9149.jpeg",
     "static/media/XBX.jpeg": "./static/media/XBX.211dbfe7be6bb5aaccd5.jpeg",
     "static/media/OQ2.png": "./static/media/OQ2.85abe631d943be9c162f.png",
     "static/media/XboxOneX.jpg": "./static/media/XboxOneX.8a340537f34084cbcfe1.jpg",
-    "static/media/Switch.jpg": "./static/media/Switch.e94d4e4679ae22e35b76.jpg",
-    "static/media/Ps4Pro.jpg": "./static/media/Ps4Pro.f9a425fcda6d0eb7f541.jpg",
-    "static/media/ps5.jpg": "./static/media/ps5.250228bfa48f0f418ea9.jpg",
+    "static/media/Switch.jpg": "./static/media/Switch.5ca9924e0fc182be653d.jpg",
+    "static/media/Ps4Pro.jpg": "./static/media/Ps4Pro.2052425852a6bb4ca0ce.jpg",
+    "static/media/ps5.jpg": "./static/media/ps5.adb29a4d4bfed6d5e5b4.jpg",
     "index.html": "./index.html",
-    "main.aad291e0.css.map": "./static/css/main.aad291e0.css.map",
-    "main.90154484.js.map": "./static/js/main.90154484.js.map"
+    "main.ab8e38b4.css.map": "./static/css/main.ab8e38b4.css.map",
+    "main.ebac068e.js.map": "./static/js/main.ebac068e.js.map"
   },
   "entrypoints": [
-    "static/css/main.aad291e0.css",
-    "static/js/main.90154484.js"
+    "static/css/main.ab8e38b4.css",
+    "static/js/main.ebac068e.js"
   ]
 }
