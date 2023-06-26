@@ -10,12 +10,6 @@
 .navbar-caption-wrap {
   padding-block: 0.75rem;
 }
-.nav-link {
-  margin: .667em 0.5rem !important;
-  padding: 0 !important;
-  transition: 0.3s;
-}
-
 .dropdown-item.active, .dropdown-item:active {
   background-color: transparent;
 }
@@ -41,12 +35,6 @@
   word-break: break-word;
   z-index: 1;
 }
-
-.collapse {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 .cid-trIi3lod2Q .navbar-brand .navbar-logo amp-img, .cid-trIi3lod2Q .navbar-brand .navbar-logo img {
   height: 70px;
   width: 70px;
@@ -61,14 +49,6 @@
   font-family: 'Oswald',sans-serif;
   font-size: 1.5rem;
   line-height: 1.2;
-}
-.nav-link, .navbar-caption {
-  transition: all 0.2s;
-  letter-spacing: 1px;
-}
-h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-4, .display-5, .display-7 {
-  word-break: break-word;
-  word-wrap: break-word;
 }
 .navbar-nav {
   list-style-type: none;
@@ -96,11 +76,6 @@ a[class*="text-"], .amp-iconfont, .iconfont {
 p, li, blockquote {
   letter-spacing: 0.5px;
   line-height: 1.7;
-}
-.display-7 {
-  font-family: 'Play',sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
 }
 .nav-link, .navbar-caption {
   transition: all 0.2s;
@@ -137,11 +112,6 @@ div .section-btn {
   border-color: #1bc2ca !important;
   color: #1bc2ca;
 }
-.display-7 {
-  font-family: 'Play',sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-}
 .btn-md {
   padding: 10px 30px;
 }
@@ -157,13 +127,6 @@ div .section-btn {
   justify-content: center;
   word-break: break-word;
   overflow: hidden;
-}
-.navbar .navbar-collapse {
-  display: flex;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
-  align-items: center;
-  justify-content: flex-end;
 }
 section.menu {
   min-height: 70px;

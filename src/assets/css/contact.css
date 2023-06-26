@@ -144,23 +144,6 @@ form textarea.field-input {
 form .btn, form .section-btn {
     margin: 0;
 }
-.btn {
-    border-radius: 40px;
-    letter-spacing: -0.3px;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    position: relative;
-    font-weight: 700;
-    border: 2px solid;
-    font-style: normal;
-    white-space: normal;
-    transition: all 0.2s ease-in-out,box-shadow 2s ease-in-out;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    word-break: break-word;
-    overflow: hidden;
-}
 .btn-primary, .btn-primary:active, .btn-primary.active {
     background-color: #1bc2ca;
     border-color: #1bc2ca;
@@ -173,7 +156,6 @@ form .btn, form .section-btn {
 }
 .btn-md {
     padding: 10px 30px;
-    /* border-radius: 0px; */
 }
 .formfilled {
     font-family: "Dosis", sans-serif;

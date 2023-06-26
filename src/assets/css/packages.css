@@ -19,7 +19,12 @@
 .row-pack {
     width: 100%;
 }
-
+.cardtitle {
+    color: white;
+}
+.cardtitle:hover {
+    color: #1bc2ca;
+}
 .row-pack, .form-row-pack {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -80,13 +85,6 @@
 .align-center .list-item {
     justify-content: center;
 }
-
-.display-7 {
-    font-family: 'Play',sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
 .cid-traOecPbxG .card-head, .cid-traOecPbxG .card-inner {
     border-radius: 15px;
 }
@@ -117,21 +115,16 @@
     border-bottom-left-radius: 0.9375rem;
     border-bottom-right-radius: 0.9375rem;
 }
-
+.cid-traOecPbxG .price-wrap1 {
+    background-color: #3dd0d8;
+}
 .cid-traOecPbxG .price-wrap2 {
     background-color: #5c9ddd;
 }
-
 .cid-traOecPbxG .price-wrap3 {
     background-color: #7c69e3;
 }
-
-.cid-traOecPbxG .price-wrap4 {
-    background-color: #3dd0d8;
-}
-
 .card .card-title {
-    /* transition: 0.5s; */
     margin: 0.5rem 0rem;
 }
 

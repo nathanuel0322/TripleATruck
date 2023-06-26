@@ -4,6 +4,7 @@ import { useSpring, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
 import { colorSet } from "../GlobalStyles";
 import  '../assets/css/home.css'
+import Testimonials from "../components/home/Testimonials";
 
 export default function Home() {
     const [reference, inView] = useInView({
@@ -43,6 +44,7 @@ export default function Home() {
                     <a href="tel:+19738458300" style={{color: 'dodgerblue'}}>Click here to call for events!</a>
                 </p>
             </animated.div>
+            <Testimonials />
         </div>
     );
 }

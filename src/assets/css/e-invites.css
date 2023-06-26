@@ -6,7 +6,7 @@
 
 ::placeholder{
     text-align: center;
-    color: blue;
+    color: black !important;
 }
 
 .inputs {

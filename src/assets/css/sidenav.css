@@ -37,6 +37,7 @@
     text-transform: uppercase;
     padding: 0.625rem 2rem;
     width: 45%;
+    word-break: inherit;
 }
 #bookbutton:hover {
     color: white !important;

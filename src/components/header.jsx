@@ -19,7 +19,7 @@ export default function Header({drawerfunc}) {
                             />
                         </div>
                         <span className="navbar-caption-wrap">
-                            <Link to="" className="navbar-caption bold white display-5">
+                            <Link to="" className="navbar-caption bold text-white display-5">
                                 Triple A Mobile Gaming - Game Truck
                             </Link>
                         </span>
@@ -33,13 +33,13 @@ export default function Header({drawerfunc}) {
                             <DehazeIcon sx={{color: 'white', fontSize: 40}} />
                         </IconButton>
                     :
-                        <div className="collapse navbar-collapse">
+                        <div className="flex flex-row items-center justify-end basis-auto">
                             <ul className="navbar-nav nav-dropdown">
                                 {['Home', 'Services', 'Packages', 'Game List', 
                                 // 'E-Invites', 
                                 'Contact Us', 'About'].map((text, index) => (
                                     <li className="nav-item" key={index}>
-                                        <Link className="nav-link bold link white text-white display-7" key={index} 
+                                        <Link className="nav-link bold link text-white display-7" key={index} 
                                             to={`/${text === 'Home' ? "" : text.split(" ").join("").toLowerCase()}`}
                                         >
                                             {text}
@@ -48,7 +48,7 @@ export default function Header({drawerfunc}) {
                                 ))}
                             </ul>
                             <div className="navbar-buttons section-btn">
-                                <a className="btn btn-md bold btn-primary-outline display-7" style={{textAlign: 'center', minWidth: '65%'}}
+                                <a className="btn btn-md bold btn-primary-outline display-7 text-center" style={{wordBreak: 'inherit', minWidth: '65%'}}
                                     target="_blank" rel="noreferrer" href="https://pkcjftgpluneupxnjv.10to8.com"
                                 >
                                     Book Now

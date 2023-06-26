@@ -119,9 +119,9 @@ export default function EInvites() {
                     id='phoneinput'
                 />
             </form> */}
-            <div class="row" id="inputrow"  style={{marginTop: topdivmargin}}>
-                <input 
-                    class="col-4 inputs"
+            <div className="row flex flex-row justify-center items-center" id="inputrow"  style={{marginTop: topdivmargin}}>
+                <input
+                    className="col-4 inputs"
                     type="text" 
                     name="ChildName" 
                     placeholder="Child's Name"
@@ -176,7 +176,7 @@ console.log("width is:", ourrow.style.width) */}
             <input id="saveimage" type="button" value={saving}
                 onClick={() => {
                     // MUST FIX TOP DIV MARGIN FOR LARGE SCREENS LATER ON
-                    settopdivmargin(!changetextvw435 ? '-14vw' : changetextvw400 ? (changetextvw350 ? '-10.5vw' : '-15vw')  : '-11vw');
+                    settopdivmargin(!changetextvw435 ? '-14vw' : changetextvw400 ? (changetextvw350 ? '-10.5vw' : '-15vw')  : '-9vw');
                     // settopdivchanged(true);
                     console.log("Export called");
                     

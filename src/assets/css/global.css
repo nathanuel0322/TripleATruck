@@ -1,11 +1,5 @@
-.white {
-    color: #ffffff;
-}
 .bold {
     font-weight: 700;
-}
-.text-white {
-  color: #ffffff;
 }
 .align-center {
     text-align: center;
@@ -15,9 +9,6 @@
 }
 .column {
     flex-direction: column;
-}
-.flex {
-    display: flex;
 }
 a, a:hover {
     text-decoration: none;
