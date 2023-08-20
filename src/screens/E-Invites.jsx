@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive';
 export default function EInvites() {
     const changetextvw435 = useMediaQuery({query: '(max-width: 435px)'});
     const [cardtosaveheight, setcardtosaveheight] = useState(null);
-
+    const [screenWidth] = useState(window.innerWidth)
     // 320 => -6.5vh
     // 434 => -7.2vh
 
@@ -16,8 +16,8 @@ export default function EInvites() {
 
     // => -5.66
     // prop: 
-    const proportion = (-0.015 * window.innerWidth) - 0.24
-    const adjustprop = (-0.0131667 * window.innerWidth) - 0.0246667
+    const proportion = (-0.015 * screenWidth) - 0.24
+    const adjustprop = (-0.0131667 * screenWidth) - 0.0246667
 
     const [topdivmargin, settopdivmargin] = useState(`${proportion}vh`)
     const [saving, setSaving] = useState('Save Image');
