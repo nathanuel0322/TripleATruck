@@ -13,8 +13,11 @@ export default function EInvites() {
 
     // 320 => -6.1vh
     // 434 => -6.7
-    const proportion = (-0.00614035 * window.innerWidth) - 4.53509
-    const adjustprop = (-0.00614035 * window.innerWidth) - 4.13509
+
+    // => -5.66
+    // prop: 
+    const proportion = (-0.015 * window.innerWidth) - 0.24
+    const adjustprop = (-0.0131667 * window.innerWidth) - 0.0246667
 
     const [topdivmargin, settopdivmargin] = useState(`${proportion}vh`)
     const [saving, setSaving] = useState('Save Image');
@@ -46,15 +49,15 @@ export default function EInvites() {
         fakeLink.remove();
     }
 
-    // useEffect(() => {
-    //     async function exporting() {
-    //         await exportAsImage()
-    //         settopdivmargin(`${proportion}vh`)
-    //     }
-    //     if (topdivmargin !== `${proportion}vh`) {
-    //         exporting()
-    //     }
-    // }, [topdivmargin])
+    useEffect(() => {
+        async function exporting() {
+            await exportAsImage()
+            settopdivmargin(`${proportion}vh`)
+        }
+        if (topdivmargin !== `${proportion}vh`) {
+            exporting()
+        }
+    }, [topdivmargin])
 
     return (
         changetextvw435 ? (
@@ -82,8 +85,8 @@ export default function EInvites() {
                     <input id="saveimage" type="button" className='border-0' value={saving}
                         onClick={async() => {
                             setSaving('Saving...');
-                            // settopdivmargin(`${adjustprop}vh`)
-                            await exportAsImage()
+                            settopdivmargin(`${adjustprop}vh`)
+                            // await exportAsImage()
                         }}
                     />
                 </div>
