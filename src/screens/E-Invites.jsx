@@ -46,15 +46,15 @@ export default function EInvites() {
         fakeLink.remove();
     }
 
-    useEffect(() => {
-        async function exporting() {
-            await exportAsImage()
-            settopdivmargin(`${proportion}vh`)
-        }
-        if (topdivmargin !== `${proportion}vh`) {
-            exporting()
-        }
-    }, [topdivmargin])
+    // useEffect(() => {
+    //     async function exporting() {
+    //         await exportAsImage()
+    //         settopdivmargin(`${proportion}vh`)
+    //     }
+    //     if (topdivmargin !== `${proportion}vh`) {
+    //         exporting()
+    //     }
+    // }, [topdivmargin])
 
     return (
         changetextvw435 ? (
@@ -79,10 +79,11 @@ export default function EInvites() {
                     </div>
                 </div>
                 <div id="bottomholder" className='w-full'>
-                    <input id="saveimage" type="button" value={saving}
+                    <input id="saveimage" type="button" className='border-0' value={saving}
                         onClick={async() => {
                             setSaving('Saving...');
-                            settopdivmargin(`${adjustprop}vh`)
+                            // settopdivmargin(`${adjustprop}vh`)
+                            await exportAsImage()
                         }}
                     />
                 </div>
