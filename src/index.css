@@ -1,4 +1,9 @@
 @tailwind base;
+@layer base {
+  img {
+    @apply inline-block;
+  }
+}
 @tailwind components;
 @tailwind utilities;
 
@@ -9,6 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 0.5;
 }
 
 code {

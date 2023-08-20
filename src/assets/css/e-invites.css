@@ -47,21 +47,16 @@
 }
 
 #locationinput {
-    margin-left: 0.6vw;
-    max-width: 22vw;
-    width: 21.5vw;
     font-size: 1.8vw;
     margin-top: 1vw;
 }
 #bdaytime {
-    margin-left: 6.5vw;
     font-size: 3vw;
     width: 16vw;
     text-align: start;
     margin-top: 0.75vw;
 }
 #phoneinput {
-    margin-left: 6.1vw;
     font-size: 2.5vw;
     width: 16vw;
     margin-top: 0.8vw;
