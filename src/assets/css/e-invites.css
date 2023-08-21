@@ -59,14 +59,7 @@
     margin-top: 0.8vw;
     text-align: start;
 }
-#bottomholder {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-}
-
 #saveimage {
-    margin-top: 4vh;
     background-color: orange;
     font-size: 4vw;
     font-family: 'Oswald', sans-serif;
