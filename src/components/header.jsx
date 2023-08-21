@@ -35,8 +35,7 @@ export default function Header({drawerfunc}) {
                     :
                         <div className="flex flex-row items-center justify-end basis-auto">
                             <ul className="navbar-nav nav-dropdown">
-                                {['Home', 'Services', 'Packages', 'Game List', 
-                                'E-Invites', 
+                                {['Home', 'Services', 'Packages', 'Game List', 'E-Invites', 
                                 'Contact Us', 'About'].map((text, index) => (
                                     <li className="nav-item" key={index}>
                                         <Link className="nav-link bold link text-white display-7" key={index} 
