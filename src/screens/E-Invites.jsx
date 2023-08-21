@@ -69,24 +69,24 @@ export default function EInvites() {
                         <input
                             className="inputs w-[15.7%] !ml-[7.5vw]"
                             type="text" name="ChildName" placeholder="Child's Name" id="childname"
-                            onFocus={() => setFocused(true)}
-                            onBlur={() => setFocused(false)}
+                            onFocus={() => {console.log('focused'); setFocused(true); alert('Focused')}}
+                            onBlur={() => {console.log('blurred'); setFocused(false); alert('Blurred')}}
                         />
                         <input className="inputs w-[22vw] ml-[0vw]" type="text"
                             name="Location" placeholder="Location" id="locationinput"
-                            onFocus={() => setFocused(true)}
-                            onBlur={() => setFocused(false)}
+                            onFocus={() => {console.log('focused'); setFocused(true); alert('Focused')}}
+                            onBlur={() => {console.log('blurred'); setFocused(false); alert('Blurred')}}
                         />
                         <input className="inputs ml-[6.5vw]" type="text" 
                             name="Party Time" placeholder="Party Time" id="bdaytime"
-                            onFocus={() => setFocused(true)}
-                            onBlur={() => setFocused(false)}
+                            onFocus={() => {console.log('focused'); setFocused(true); alert('Focused')}}
+                            onBlur={() => {console.log('blurred'); setFocused(false); alert('Blurred')}}
                         />
                         <input 
                             className="inputs ml-[6.6vw]"
                             type="text" name="Phone Number" placeholder="Phone #" id='phoneinput'
-                            onFocus={() => setFocused(true)}
-                            onBlur={() => setFocused(false)}
+                            onFocus={() => {console.log('focused'); setFocused(true); alert('Focused')}}
+                            onBlur={() => {console.log('blurred'); setFocused(false); alert('Blurred')}}
                         />
                     </div>
                 </div>
