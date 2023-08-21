@@ -8,7 +8,6 @@ export default function EInvites() {
     const changetextvw435 = useMediaQuery({query: '(max-width: 435px)'});
     const [cardtosaveheight, setcardtosaveheight] = useState(null);
     const [screenWidth] = useState(window.innerWidth)
-    const [focused, setFocused] = useState(false)
     // 320 => -6.5vh
     // 434 => -7.2vh
 
@@ -69,39 +68,27 @@ export default function EInvites() {
                         <input
                             className="inputs w-[15.7%] !ml-[7.5vw]"
                             type="text" name="ChildName" placeholder="Child's Name" id="childname"
-                            onFocus={() => setFocused(true)}
-                            onBlur={() => setFocused(false)}
                         />
                         <input className="inputs w-[22vw] ml-[0vw]" type="text"
                             name="Location" placeholder="Location" id="locationinput"
-                            onFocus={() => setFocused(true)}
-                            onBlur={() => setFocused(false)}
                         />
                         <input className="inputs ml-[6.5vw]" type="text" 
                             name="Party Time" placeholder="Party Time" id="bdaytime"
-                            onFocus={() => setFocused(true)}
-                            onBlur={() => setFocused(false)}
                         />
                         <input 
                             className="inputs ml-[6.6vw]"
                             type="text" name="Phone Number" placeholder="Phone #" id='phoneinput'
-                            onFocus={() => setFocused(true)}
-                            onBlur={() => setFocused(false)}
                         />
                     </div>
                 </div>
                 <div id="bottomholder" className='w-full absolute flex flex-col gap-y-[2vh] mt-[4vh]'>
                     <div className='text-center text-white text-[80%]'>
-                        Please close the keyboard before saving!
+                        Please close the keyboard and zoom out before saving!
                     </div>
-                    <input id="saveimage" type="button" className='border-0' value={saving} disabled={focused}
+                    <input id="saveimage" type="button" className='border-0' value={saving}
                         onClick={async() => {
-                            // if focused is true, dont let them save
-                            // setSaving('Saving...');
-                            // zoom all the way out
-                            document.body.style.zoom = "1.0";
-                            // settopdivmargin(`${adjustprop}vh`)
-                            // await exportAsImage()
+                            setSaving('Saving...');
+                            settopdivmargin(`${adjustprop}vh`)
                         }}
                     />
                 </div>
