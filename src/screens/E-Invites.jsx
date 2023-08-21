@@ -7,7 +7,8 @@ import { useMediaQuery } from 'react-responsive';
 export default function EInvites() {
     const changetextvw435 = useMediaQuery({query: '(max-width: 435px)'});
     const [cardtosaveheight, setcardtosaveheight] = useState(null);
-    const [screenWidth, setScreenWidth] = useState(null)
+    const [screenWidth] = useState(window.innerWidth)
+    const [focused, setFocused] = useState(false)
     // 320 => -6.5vh
     // 434 => -7.2vh
 
@@ -15,18 +16,12 @@ export default function EInvites() {
     // 434 => -6.7
 
     // => -5.66
+    // prop: 
+    const proportion = (-0.015 * screenWidth) - 0.24
+    const adjustprop = (-0.0131667 * screenWidth) - 0.0246667
 
-    const [topdivmargin, settopdivmargin] = useState(`-6vh`)
+    const [topdivmargin, settopdivmargin] = useState(`${proportion}vh`)
     const [saving, setSaving] = useState('Save Image');
-
-    useEffect(() => {
-        setScreenWidth(window.innerWidth)
-    }, [])
-
-    useEffect(() => {
-        console.log("screenWidth:", screenWidth)
-        settopdivmargin(`${(-0.015 * screenWidth) - 0.24}vh`)
-    }, [screenWidth])
 
     window.onload = () => {
         const bdaypic = document.getElementById('bdaypic');
@@ -58,48 +53,54 @@ export default function EInvites() {
     useEffect(() => {
         async function exporting() {
             await exportAsImage()
-            settopdivmargin(`${(-0.015 * screenWidth) - 0.24}vh`)
+            settopdivmargin(`${proportion}vh`)
         }
-        if (topdivmargin !== `${(-0.015 * screenWidth) - 0.24}vh`) {
+        if (topdivmargin !== `${proportion}vh`) {
             exporting()
         }
     }, [topdivmargin])
 
     return (
         changetextvw435 ? (
-            screenWidth && (
-                <div className='mt-12'>
-                    <div id='CardtoSave' style={{height: `${cardtosaveheight + "px"}`}}>
-                        <img id="bdaypic" src={BDayCardPic} alt="Rectangle Poster" height="100%" width="100%" />
-                        <div className="row flex flex-row items-center" id="inputrow" style={{marginTop: topdivmargin, lineHeight: 0.5}}>
-                            <input
-                                className="inputs w-[15.7%] !ml-[7.5vw]"
-                                type="text" name="ChildName" placeholder="Child's Name" id="childname"
-                            />
-                            <input className="inputs w-[22vw] ml-[0vw]" type="text"
-                                name="Location" placeholder="Location" id="locationinput"
-                            />
-                            <input className="inputs ml-[6.5vw]" type="text" 
-                                name="Party Time" placeholder="Party Time" id="bdaytime"
-                            />
-                            <input 
-                                className="inputs ml-[6.6vw]"
-                                type="text" name="Phone Number" placeholder="Phone #" id='phoneinput'
-                                onFocus={() => console.log('focus')} onBlur={() => console.log('blur')}
-                            />
-                        </div>
-                    </div>
-                    <div id="bottomholder" className='w-full'>
-                        <input id="saveimage" type="button" className='border-0' value={saving}
-                            onClick={async() => {
-                                setSaving('Saving...');
-                                settopdivmargin(`${(-0.0131667 * screenWidth) - 0.0246667}vh`)
-                                // await exportAsImage()
-                            }}
+            <div className='mt-12'>
+                <div id='CardtoSave' style={{height: `${cardtosaveheight + "px"}`}}>
+                    <img id="bdaypic" src={BDayCardPic} alt="Rectangle Poster" height="100%" width="100%" />
+                    <div className="row flex flex-row items-center" id="inputrow" style={{marginTop: topdivmargin, lineHeight: 0.5}}>
+                        <input
+                            className="inputs w-[15.7%] !ml-[7.5vw]"
+                            type="text" name="ChildName" placeholder="Child's Name" id="childname"
+                        />
+                        <input className="inputs w-[22vw] ml-[0vw]" type="text"
+                            name="Location" placeholder="Location" id="locationinput"
+                        />
+                        <input className="inputs ml-[6.5vw]" type="text" 
+                            name="Party Time" placeholder="Party Time" id="bdaytime"
+                        />
+                        <input 
+                            className="inputs ml-[6.6vw]"
+                            type="text" name="Phone Number" placeholder="Phone #" id='phoneinput'
+                            onFocus={() => setFocused(true)}
+                            onBlur={() => setFocused(false)}
                         />
                     </div>
                 </div>
-            )
+                <div id="bottomholder" className='w-full'>
+                    <input id="saveimage" type="button" className='border-0' value={saving}
+                        onClick={async() => {
+                            // if focused is true, dont let them save
+                            if (focused) {
+                                alert("Please close keyboard before saving image")
+                            } else {
+                                setSaving('Saving...');
+                                // zoom all the way out
+                                document.body.style.zoom = "100%";
+                                settopdivmargin(`${adjustprop}vh`)
+                            }
+                            // await exportAsImage()
+                        }}
+                    />
+                </div>
+            </div>
         ) : (
             <div className='flex flex-col items-center justify-center text-white text-2xl' style={{height: 'calc(100vh - 80px)'}}>
                 Please use a mobile device to access this page
