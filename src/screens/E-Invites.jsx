@@ -99,7 +99,7 @@ export default function EInvites() {
                             // if focused is true, dont let them save
                             // setSaving('Saving...');
                             // zoom all the way out
-                            document.body.style.zoom = "100%";
+                            document.body.style.zoom = "1.0";
                             // settopdivmargin(`${adjustprop}vh`)
                             // await exportAsImage()
                         }}
