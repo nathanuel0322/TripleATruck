@@ -14,15 +14,15 @@ export default function Contact() {
         const formbutton = document.getElementById("sendbutton");
         formbutton.disabled = true;
         setButtonText("Sending...")
-        emailjs.sendForm('service_fgye525', 'template_2jw41u9', '#contactme', 'dbCtiR00Etae1Fo2Q')
-        .then((result) => {
-            setFormfilled(true);
-            console.log(result.text);
-            setButtonText("Send")
-        }, (error) => {
-            console.log(error.text);
-            setButtonText("Send")
-        });
+        emailjs.sendForm('service_w65hlrt', 'template_5ghkuin', '#contactme', 'B-RiixxsVwE-S4GOC')
+            .then((result) => {
+                setFormfilled(true);
+                console.log(result.text);
+                setButtonText("Send")
+            }, (error) => {
+                console.log(error.text);
+                setButtonText("Send")
+            });
     };
 
     return (

@@ -9,7 +9,7 @@ export default function Packages() {
         { title: 'VR Package', price: 100, }, 
         { title: 'Movie & Gaming Combo', price: 825 },
         { title: 'Popcorn Machine', price: 150 },
-        { title: 'Cotton Candy Machine', price: 300 },
+        { title: 'Cotton Candy Machine', price: 150 },
         { title: 'Sip N Sing (2HR Karaoke Party)', price: 450 }
     ]
 
