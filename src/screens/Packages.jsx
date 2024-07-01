@@ -20,7 +20,7 @@ export default function Packages() {
                     <div className="row-pack jc-c">
                         {packagesarr.map((pack, index) => {
                             return (
-                                <div className='card col-sm-12-pack col-md-6-pack md-pb-pack col-lg-3-pack align-center'>
+                                <div className='card col-sm-12-pack col-md-6-pack md-pb-pack col-lg-3-pack align-center' key={index}>
                                     <div className="card-inner">
                                         <div className="card-head">
                                             <h3 className="cardtitle card-title fonts-style display-5-pack">{pack.title}</h3>

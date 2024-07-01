@@ -19,7 +19,7 @@ export default function Home() {
     return (
         <div>
             <MidSlideShow />
-            <animated.div className="hometext" style={props} ref={reference}>
+            <animated.div className="hometext !mb-[4vh]" style={props} ref={reference}>
                 <p>
                     State-of-the-art gaming literally in your backyard!
                 </p>        
@@ -44,6 +44,9 @@ export default function Home() {
                     <a href="tel:+19738458300" style={{color: 'dodgerblue'}}>Click here to call for events!</a>
                 </p>
             </animated.div>
+            <img src={require('../assets/images/review-yelp-logo.png')} alt="yelp logo" className="cursor-pointer mx-auto my-0"
+                onClick={() => window.open('https://www.yelp.com/writeareview/biz/tFg1s-EdIl19VqDLB4j3Xw?return_url=%2Fbiz%2FtFg1s-EdIl19VqDLB4j3Xw&review_origin=biz-details-war-button', '_blank')}
+            />
             <Testimonials />
         </div>
     );
