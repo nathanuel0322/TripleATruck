@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.5ef612c8.css",
-    "main.js": "./static/js/main.e56d1074.js",
+    "main.css": "./static/css/main.58e411c6.css",
+    "main.js": "./static/js/main.d3928171.js",
     "static/media/inside1.jpg": "./static/media/inside1.89667c447253f444290d.jpg",
     "static/media/inside2.jpg": "./static/media/inside2.b18c1a5c5e811f2e80de.jpg",
     "static/media/inside3.jpg": "./static/media/inside3.2840e48aa310468d6d2f.jpg",
@@ -26,12 +26,13 @@
     "static/media/Switch.jpg": "./static/media/Switch.5ca9924e0fc182be653d.jpg",
     "static/media/Ps4Pro.jpg": "./static/media/Ps4Pro.2052425852a6bb4ca0ce.jpg",
     "static/media/ps5.jpg": "./static/media/ps5.adb29a4d4bfed6d5e5b4.jpg",
+    "static/media/review-yelp-logo.png": "./static/media/review-yelp-logo.e2dc1e037772c579be99.png",
     "index.html": "./index.html",
-    "main.5ef612c8.css.map": "./static/css/main.5ef612c8.css.map",
-    "main.e56d1074.js.map": "./static/js/main.e56d1074.js.map"
+    "main.58e411c6.css.map": "./static/css/main.58e411c6.css.map",
+    "main.d3928171.js.map": "./static/js/main.d3928171.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ef612c8.css",
-    "static/js/main.e56d1074.js"
+    "static/css/main.58e411c6.css",
+    "static/js/main.d3928171.js"
   ]
 }
